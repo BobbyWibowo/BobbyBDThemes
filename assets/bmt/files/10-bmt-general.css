@@ -153,12 +153,6 @@
 }
 */
 
-/** Radial Status **/
-
-[class*="members-"] [class*="member-"] {
-  padding: 2px 0 !important;
-}
-
 /** Add shadow to emoji picker **/
 
 .popout-3sVMXz.noShadow-321ZPm .emojiPicker-3m1S-j {

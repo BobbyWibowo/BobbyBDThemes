@@ -1,115 +1,55 @@
-/** Force colored version for badges **/
+/** Force colored version for badges, except on Spotify (support BadgesEverywhere) **/
 
-.topSectionNormal-2-vo2m .profileBadgeStaff-13GO7z {
+.topSectionNormal-2-vo2m .profileBadgeStaff-13GO7z,
+:not(.topSectionSpotify-1lI0-P) > .header-QKLPzZ .profileBadgeStaff-13GO7z,
+:not(.headerSpotify-zpWxgT) > .headerTop-3C2Zn0 .profileBadgeStaff-13GO7z {
   background-image: url(/assets/4358ad1fb423b346324516453750f569.svg);
 }
 
-.topSectionNormal-2-vo2m .profileBadgePartner-SjK6L2 {
+.topSectionNormal-2-vo2m .profileBadgePartner-SjK6L2,
+:not(.topSectionSpotify-1lI0-P) > .header-QKLPzZ .profileBadgePartner-SjK6L2,
+:not(.headerSpotify-zpWxgT) > .headerTop-3C2Zn0 .profileBadgePartner-SjK6L2 {
   background-image: url(/assets/33fedf082addb91d88abc272b4b18daa.svg);
 }
 
-.topSectionNormal-2-vo2m .profileBadgeBugHunter-IV0vLE {
+.topSectionNormal-2-vo2m .profileBadgeBugHunter-IV0vLE,
+:not(.topSectionSpotify-1lI0-P) > .header-QKLPzZ .profileBadgeBugHunter-IV0vLE,
+:not(.headerSpotify-zpWxgT) > .headerTop-3C2Zn0 .profileBadgeBugHunter-IV0vLE {
   background-image: url(/assets/f61b8981e92feead854f52e5a1ba14f0.svg);
 }
 
-.topSectionNormal-2-vo2m .profileBadgeHypesquad-1YIe7Z {
+.topSectionNormal-2-vo2m .profileBadgeHypesquad-1YIe7Z,
+:not(.topSectionSpotify-1lI0-P) > .header-QKLPzZ .profileBadgeHypesquad-1YIe7Z,
+:not(.headerSpotify-zpWxgT) > .headerTop-3C2Zn0 .profileBadgeHypesquad-1YIe7Z {
   background-image: url(/assets/3a050fcc884255231b99b7033c776070.svg);
 }
 
-.topSectionNormal-2-vo2m .profileBadgeHypeSquadOnlineHouse1-xN6tES {
+.topSectionNormal-2-vo2m .profileBadgeHypeSquadOnlineHouse1-xN6tES,
+:not(.topSectionSpotify-1lI0-P) > .header-QKLPzZ .profileBadgeHypeSquadOnlineHouse1-xN6tES,
+:not(.headerSpotify-zpWxgT) > .headerTop-3C2Zn0 .profileBadgeHypeSquadOnlineHouse1-xN6tES {
   background-image: url(/assets/64ae1208b6aefc0a0c3681e6be36f0ff.svg)
 }
 
-.topSectionNormal-2-vo2m .profileBadgeHypeSquadOnlineHouse2-3jBpXR {
+.topSectionNormal-2-vo2m .profileBadgeHypeSquadOnlineHouse2-3jBpXR,
+:not(.topSectionSpotify-1lI0-P) > .header-QKLPzZ .profileBadgeHypeSquadOnlineHouse2-3jBpXR,
+:not(.headerSpotify-zpWxgT) > .headerTop-3C2Zn0 .profileBadgeHypeSquadOnlineHouse2-3jBpXR {
   background-image: url(/assets/48cf0556d93901c8cb16317be2436523.svg);
 }
 
-.topSectionNormal-2-vo2m .profileBadgeHypeSquadOnlineHouse3-1YbjMX {
+.topSectionNormal-2-vo2m .profileBadgeHypeSquadOnlineHouse3-1YbjMX,
+:not(.topSectionSpotify-1lI0-P) > .header-QKLPzZ .profileBadgeHypeSquadOnlineHouse3-1YbjMX,
+:not(.headerSpotify-zpWxgT) > .headerTop-3C2Zn0 .profileBadgeHypeSquadOnlineHouse3-1YbjMX {
   background-image: url(/assets/9fdc63ef8a3cc1617c7586286c34e4f1.svg);
 }
 
-.topSectionNormal-2-vo2m .profileBadgeEarlySupporter-PQB_0a {
+.topSectionNormal-2-vo2m .profileBadgeEarlySupporter-PQB_0a,
+:not(.topSectionSpotify-1lI0-P) > .header-QKLPzZ .profileBadgeEarlySupporter-PQB_0a,
+:not(.headerSpotify-zpWxgT) > .headerTop-3C2Zn0 .profileBadgeEarlySupporter-PQB_0a {
   background-image: url(/assets/23e59d799436a73c024819f84ea0b627.svg);
 }
 
-.topSectionNormal-2-vo2m .profileBadgePremium-3kZ9Qj {
+.topSectionNormal-2-vo2m .profileBadgePremium-3kZ9Qj,
+:not(.topSectionSpotify-1lI0-P) > .header-QKLPzZ .profileBadgePremium-3kZ9Qj,
+:not(.headerSpotify-zpWxgT) > .headerTop-3C2Zn0 .profileBadgePremium-3kZ9Qj{
   background-image: url(/assets/386884eecd36164487505ddfbac35a9d.svg);
 }
-
-/** White badges of BadgesEverywhere if on Spotify **/
-
-.headerSpotify-zpWxgT .BE-badge-Staff {
-  background-image: url(/assets/7cfd90c8062139e4804a1fa59f564731.svg) !important;
-}
-
-.headerSpotify-zpWxgT .BE-badge-Partner {
-  background-image: url(/assets/a0e288a458c48dfcf548dadc277e42e6.svg) !important;
-}
-
-.headerSpotify-zpWxgT .BE-badge-BugHunter {
-  background-image: url(/assets/df26f079738a4dcd07cbce6eb3c957f1.svg) !important;
-}
-
-.headerSpotify-zpWxgT .BE-badge-HypeSquad {
-  background-image: url(/assets/3a050fcc884255231b99b7033c776070.svg) !important;
-}
-
-.headerSpotify-zpWxgT .BE-badge-HypeSquadBravery {
-  background-image: url(/assets/1115767aed344e96a27a12e97718c171.svg) !important;
-}
-
-.headerSpotify-zpWxgT .BE-badge-HypeSquadBalance {
-  background-image: url(/assets/d3478c6bd5cee0fc600e55935ddc81aa.svg) !important;
-}
-
-.headerSpotify-zpWxgT .BE-badge-HypeSquadBrilliance {
-  background-image: url(/assets/d3478c6bd5cee0fc600e55935ddc81aa.svg) !important;
-}
-
-.headerSpotify-zpWxgT .BE-badge-EarlySupporter {
-  background-image: url(/assets/ce15562552e3d70c56d5408cfeed2ffd.svg) !important;
-}
-
-.headerSpotify-zpWxgT .BE-badge-Nitro {
-  background-image: url(/assets/379d2b3171722ef8be494231234da5d1.svg) !important;
-}
-
-/** Colored badges only for non-Spotify profiles **/
-
-/*
-:not(.topSectionSpotify-1lI0-P) > .header-QKLPzZ .profileBadgeStaff-13GO7z {
-  background-image: url(/assets/4358ad1fb423b346324516453750f569.svg) !important;
-}
-
-:not(.topSectionSpotify-1lI0-P) > .header-QKLPzZ .profileBadgePartner-SjK6L2 {
-  background-image: url(/assets/33fedf082addb91d88abc272b4b18daa.svg) !important;
-}
-
-:not(.topSectionSpotify-1lI0-P) > .header-QKLPzZ .profileBadgeBugHunter-IV0vLE {
-  background-image: url(/assets/f61b8981e92feead854f52e5a1ba14f0.svg) !important;
-}
-
-:not(.topSectionSpotify-1lI0-P) > .header-QKLPzZ .profileBadgeHypesquad-1YIe7Z {
-  background-image: url(/assets/6c73f47daf179ffade99f501bfc5101b.svg) !important;
-}
-
-:not(.topSectionSpotify-1lI0-P) > .header-QKLPzZ .profileBadgeHypeSquadOnlineHouse1-xN6tES {
-  background-image: url(/assets/64ae1208b6aefc0a0c3681e6be36f0ff.svg) !important;
-}
-
-:not(.topSectionSpotify-1lI0-P) > .header-QKLPzZ .profileBadgeHypeSquadOnlineHouse2-3jBpXR {
-  background-image: url(/assets/48cf0556d93901c8cb16317be2436523.svg) !important;
-}
-
-:not(.topSectionSpotify-1lI0-P) > .header-QKLPzZ .profileBadgeHypeSquadOnlineHouse3-1YbjMX {
-  background-image: url(/assets/9fdc63ef8a3cc1617c7586286c34e4f1.svg) !important;
-}
-
-:not(.topSectionSpotify-1lI0-P) > .header-QKLPzZ .profileBadgeEarlySupporter-PQB_0a {
-  background-image: url(/assets/23e59d799436a73c024819f84ea0b627.svg) !important;
-}
-
-:not(.topSectionSpotify-1lI0-P) > .header-QKLPzZ .profileBadgePremium-3kZ9Qj {
-  background-image: url(/assets/386884eecd36164487505ddfbac35a9d.svg) !important;
-}
-*/

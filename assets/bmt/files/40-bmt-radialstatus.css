@@ -1,0 +1,5 @@
+/** Radial Status **/
+
+[class*="membersWrap-"] [class*="members-"] [class*="member-"] {
+  padding: 2px 0 !important;
+}
