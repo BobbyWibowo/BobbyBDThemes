@@ -1,0 +1,40 @@
+:root {
+  --font-family-1: 'Ubuntu', sans-serif;
+  --font-family-2: 'Google Sans', 'Ubuntu', sans-serif;
+  --font-family-monospace: 'Fira Code', monospace;
+}
+
+/** Fonts **/
+
+::-webkit-input-placeholder,
+body,
+input,
+select,
+textarea {
+  font-family: var(--font-family-1) !important;
+}
+
+button {
+  font-family: var(--font-family-2) !important;
+}
+
+code,
+code.inline,
+.ace_editor,
+.line-numbers,
+.editor {
+  font-family: var(--font-family-monospace) !important;
+}
+
+/** Enlarge default emoji size to 40px, works better with Emote Zoom **/
+
+#app-mount .markup-2BOw-j>.emoji.jumboable {
+  height: 40px !important;
+  width: 40px !important;
+}
+
+/** Hide owner icon (the crown) **/
+
+.ownerIcon-uZ6mE7 {
+  display: none;
+}

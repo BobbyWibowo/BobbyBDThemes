@@ -1,0 +1,76 @@
+/** Magane custom styling for BMT **/
+
+div#app-mount div#magane a,
+div#app-mount div#magane button,
+div#app-mount div#magane div,
+div#app-mount div#magane input,
+div#app-mount div#magane label,
+div#app-mount div#magane li,
+div#app-mount div#magane p,
+div#app-mount div#magane select,
+div#app-mount div#magane span,
+div#app-mount div#magane ul {
+  font-family: inherit !important;
+}
+
+div#app-mount div#magane div.channel-textarea-stickers {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url(/assets/a42df564f00ed8bbca652dc9345d3834.svg);
+  background-origin: content-box;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-size: 22px;
+  height: 100%;
+  top: 0 !important;
+  right: 67px !important;
+  opacity: 0.4;
+  padding: 2px 0 2px 16px;
+  width: 67px;
+  box-sizing: border-box;
+}
+
+.emojiButton-2wRZts {
+  padding-left: 0 !important;
+  padding-right: 16px !important;
+  background-origin: content-box !important;
+  width: 67px !important;
+}
+
+div#app-mount div#magane div.channel-textarea-stickers:hover {
+  opacity: 1;
+  transform: none;
+}
+
+div#app-mount div#magane div.stickerWindow {
+  bottom: 78px !important;
+  right: 23px !important;
+  border-radius: 3px;
+  background: #212121 !important;
+  box-shadow: 0 10px 25px var(--black4);
+}
+
+div#app-mount div#magane div.stickerWindow>div.packs {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  height: 58px !important;
+  background: #141414 !important;
+}
+
+div#app-mount div#magane div.stickerWindow>div.packs::-webkit-scrollbar {
+  height: 8px !important;
+}
+
+div#app-mount div#magane div.stickerWindow>div.packs::-webkit-scrollbar-thumb {
+  border-radius: 3px !important;
+}
+
+div#app-mount div#magane div.stickerWindow>div.packs div.pack {
+  float: none !important;
+  display: inline-block !important;
+}
+
+.innerDisabled-2mc-iF div#magane {
+  display: none !important;
+}

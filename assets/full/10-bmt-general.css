@@ -1,0 +1,201 @@
+:root {
+  --accent-color: #3A71C1;
+}
+
+.guildsWrapper-5TJh6A .guilds-1q_RqH {
+  height: 100%;
+  padding-bottom: 80px !important;
+  box-sizing: border-box;
+}
+
+/** Themes the background for Card with Nitro being paid on it. **/
+
+.theme-dark .premiumIndicator-1XvbfM {
+  background-color: var(--accent-color)
+}
+
+/** Edit Card Button **/
+
+.theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
+  background-color: var(--accent-color)
+}
+
+/** Fix All Transactions - Nitro - (Probably) Games - Top Tab **/
+
+.top-28JiJ- .tab-1kx2RU {
+  padding: 9px;
+}
+
+/** Background of Title Panels in payment list **/
+
+.theme-dark .paymentPane-3bwJ6A {
+  background-color: var(--lvl25);
+}
+
+/** Background for Payment list **/
+
+.theme-dark .payment-xT17Mq {
+  background-color: var(--lvl1);
+}
+
+.theme-dark .hoverablePayment-Yc6mK7:hover {
+  background-color: var(--lvl2)
+}
+
+/** Extra information within Payment **/
+
+.theme-dark .expandedInfo-3kfShd {
+  background-color: var(--lvl2);
+}
+
+/** Page indicator at the bottom **/
+
+.theme-dark .paginator-166-09 {
+  background: var(--lvl1);
+}
+
+/** Fade modal bg **/
+
+.root-SR8cQa .activity-1ythUs,
+.userPopout-3XzG_A .header-2BwW8b .activity-11LB_k {
+  background: none;
+  background-image: linear-gradient(to top, var(--lvl2), transparent);
+}
+
+/** Blur account email **/
+
+.userInfoViewing-16kqK3 .flexChild-faoVW3>div:nth-child(2) .viewBody-2Qz-jg.selectable-x8iAUj {
+  filter: blur(5px);
+  transition: 200ms cubic-bezier(.2, .11, 0, 1);
+}
+
+.userInfoViewing-16kqK3 .flexChild-faoVW3>div:nth-child(2) .viewBody-2Qz-jg.selectable-x8iAUj:hover {
+  filter: none;
+  transition: 200ms cubic-bezier(.2, .11, 0, 1);
+}
+
+/** Returns additional play button for Spotify/games **/
+
+/*
+.attachButtonPlus-rUdX-B {
+  display: none;
+}
+*/
+
+/*
+.attachButtonPlay-ZnFdQr {
+  // TODO: Remove the transformation/scale on this
+}
+*/
+
+/** Escape button fixes **/
+
+.theme-dark .ui-standard-sidebar-view .esc-text {
+  color: #72767d;
+}
+
+/** Remove theme comments **/
+
+#bd-settingspane-container .content-column.default .bda-slist::after,
+#bd-settingspane-container .content-column.default .bda-slist::before,
+.content-region #bd-customcss-attach-controls::after {
+  display: none;
+}
+
+/** Fix theme comments going out of bound **/
+
+#bd-settingspane-container .content-column.default .bda-slist::after,
+#bd-settingspane-container .content-column.default .bda-slist::before {
+  white-space: pre-wrap;
+}
+
+/** Restore margin bottom of custom css editor **/
+
+.content-region #bd-customcss-attach-controls,
+#bd-customcss-detach-container #bd-customcss-attach-controls {
+  margin-bottom: 60px !important;
+}
+
+/** Fix nitro store button **/
+
+/*
+.viewGamesButton-2UgRrs {
+  background-color: #fff !important;
+}
+*/
+
+/** Message Controls **/
+
+.reactionBtn-2na4rd {
+  margin-top: 2px;
+}
+
+.button-3Jq0g9 {
+  margin-top: 1px;
+}
+
+.container-1YxwTf .btn-quote {
+  margin-top: 2px;
+  margin-right: 2px;
+  opacity: .4;
+  transition: opacity .2s ease;
+}
+
+.container-1YxwTf .btn-quote:hover {
+  opacity: 1;
+}
+
+/** Fix background in wumpus new account notification **/
+
+/*
+.userPopout-3XzG_A {
+  background-color: var(--lvl1);
+}
+*/
+
+/** Radial Status **/
+
+[class*="members-"] [class*="member-"] {
+  padding: 2px 0 !important;
+}
+
+/** Add shadow to emoji picker **/
+
+.popout-3sVMXz.noShadow-321ZPm .emojiPicker-3m1S-j {
+  box-shadow: 0 10px 25px var(--black4) !important;
+}
+
+/** Remove Clyde's face from system messages **/
+
+.container-1YxwTf>.content-3dzVd8:first-child::after {
+  display: none;
+}
+
+/** Fix cancel button in Nitro tier card **/
+
+.tierGrandfathered-R6zrrD .lookInverted-2D7oAl.colorBrand-3pXr91 {
+  background: #fff !important;
+}
+
+/** Remove margins from emojis **/
+
+.emoji {
+  margin: 0;
+}
+
+.emoji.jumboable {
+  margin-top: 0;
+}
+
+/** Add margin to image details plugin **/
+
+.image-details {
+  margin-bottom: 5px;
+}
+
+/** Disable timestamp with compact mode **/
+
+.theme-dark .timestampCompact-MHgFLv {
+  visibility: collapse;
+  width: 8ch;
+}

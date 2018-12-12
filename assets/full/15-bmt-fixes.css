@@ -1,0 +1,113 @@
+/** Fixes due to outdated class names **/
+
+/** Emoji button **/
+
+.pickerButtons-v-PPYK {
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+
+.emojiButton-3uL3Aw .sprite-2iCowe {
+  display: none;
+}
+
+.emojiButton-3uL3Aw {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMTEuOTkgMkM2LjQ3IDIgMiA2LjQ4IDIgMTJzNC40NyAxMCA5Ljk5IDEwQzE3LjUyIDIyIDIyIDE3LjUyIDIyIDEyUzE3LjUyIDIgMTEuOTkgMnpNMTIgMjBjLTQuNDIgMC04LTMuNTgtOC04czMuNTgtOCA4LTggOCAzLjU4IDggOC0zLjU4IDgtOCA4em0zLjUtOWMuODMgMCAxLjUtLjY3IDEuNS0xLjVTMTYuMzMgOCAxNS41IDggMTQgOC42NyAxNCA5LjVzLjY3IDEuNSAxLjUgMS41em0tNyAwYy44MyAwIDEuNS0uNjcgMS41LTEuNVM5LjMzIDggOC41IDggNyA4LjY3IDcgOS41IDcuNjcgMTEgOC41IDExem0zLjUgNi41YzIuMzMgMCA0LjMxLTEuNDYgNS4xMS0zLjVINi44OWMuOCAyLjA0IDIuNzggMy41IDUuMTEgMy41eiIvPjwvc3ZnPg==) !important;
+  background-repeat: no-repeat !important;
+  background-position: 50% !important;
+  background-color: transparent !important;
+  transition: all 100ms ease;
+  width: 80px;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+.theme-dark .emojiButton-3uL3Aw {
+  top: 0;
+  right: 0;
+  opacity: 0.24;
+  transition: all 200ms ease;
+}
+
+.theme-dark .inner-zqa7da:hover .emojiButton-3uL3Aw {
+  opacity: 0.3;
+  transition: all 200ms ease; }
+
+.theme-dark .inner-zqa7da .emojiButton-3uL3Aw:hover,
+.theme-dark .inner-zqa7da .emojiButton-3uL3Aw:active,
+.theme-dark .inner-zqa7da .emojiButton-3uL3Aw.popout-open {
+  opacity: 1;
+  transition: all 100ms ease;
+}
+
+.emojiButton-3uL3Aw {
+  margin: 0;
+  height: 100%;
+  width: 75px;
+  max-height: initial !important;
+}
+
+/** Upload modal - Emoji button **/
+
+.uploadModal-2ifh8j .inner-zqa7da textarea {
+  margin-right: 0;
+}
+
+.uploadModal-2ifh8j .emojiButton-3uL3Aw {
+  width: 38px;
+}
+
+/** Channel text area (edit message) - Emoji button **/
+
+.message-1PNnaP .channelTextArea-1LDbYG .inner-zqa7da .textArea-2Spzkt {
+  margin-right: 0;
+}
+
+.message-1PNnaP .channelTextArea-1LDbYG .inner-zqa7da .textArea-2Spzkt .emojiButton-3uL3Aw {
+  padding: 2px 0;
+}
+
+/** Settings page **/
+
+.standardSidebarView-3F1I7i .sidebarRegion-VFTUkN {
+  background: var(--lvl3) !important;
+}
+
+.standardSidebarView-3F1I7i .contentRegion-3nDuYy {
+  background: var(--lvl2) !important;
+}
+
+.sidebarRegion-VFTUkN .sidebar-CFHs9e #bd-settings-sidebar .ui-tab-bar-item.selected,
+.standardSidebarView-3F1I7i .bda-slist .bda-right button,
+.standardSidebarView-3F1I7i .bda-slist li button {
+  background: var(--accent-color);
+}
+
+/** Channels **/
+
+.channels-Ie2l6A .scroller-2wx7Hm::-webkit-scrollbar {
+  background: var(--lvl2) !important;
+  border-radius: 0 !important;
+  width: 8px !important;
+}
+
+.channels-Ie2l6A .scroller-2wx7Hm::-webkit-scrollbar-thumb {
+  border-radius: 0 !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 0px solid transparent !important;
+  visibility: visible !important;
+  border-left: 4px solid var(--lvl2) !important;
+}
+
+.channels-Ie2l6A .scroller-2wx7Hm::-webkit-scrollbar-thumb:hover {
+  background: var(--white1) !important;
+}
+
+.channels-Ie2l6A .scroller-2wx7Hm::-webkit-scrollbar-thumb:active {
+  background: var(--white2) !important;
+}
+
+.channels-Ie2l6A .scroller-2wx7Hm::-webkit-scrollbar-track {
+  background: transparent !important;
+}
