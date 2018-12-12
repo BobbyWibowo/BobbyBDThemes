@@ -30,7 +30,7 @@ Mark `build.sh` as executable by doing `chmod o+x build.sh`, then you can run it
 
 ## Watch
 
-To watch changes and rebuild the themes automatically, use `/.watch.sh`.
+To watch changes and rebuild the themes automatically, use `/.watch.sh` (don't forget to mark it as executable).
 
 This needs `inotifywait`, in Debian/Ubuntu it's available as `inotify-tools`:
 
