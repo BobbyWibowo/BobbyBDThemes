@@ -38,10 +38,14 @@ Options:
 
 ## Watch
 
-To watch changes and rebuild the themes automatically, use `/.watch.sh` (don't forget to mark it as executable).
+There is also a script available to watch changes then rebuild the themes automatically.
+
+It's named `watch.sh`, mark it as executable to use. The script itself will use `build.sh` to build, so make sure that's also executable.
 
 This needs `inotifywait`, in Debian/Ubuntu it's available as `inotify-tools`:
 
 ```shell
 sudo apt install inotify-tools -y
 ```
+
+By default the script will not use `-c` and `-r` options of `build.sh`. To use them, simply run the script with the said options, e.i. `./watch.sh -c` or `./watch.sh -cr`.
