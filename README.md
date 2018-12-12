@@ -28,6 +28,14 @@ That's pretty much what the remote version does, by the way.
 
 Mark `build.sh` as executable by doing `chmod o+x build.sh`, then you can run it with `./build.sh`.
 
+Options:
+
+`-c` copy BD themes to `~/.config/BetterDiscord/themes`.
+
+`-r` build remote version of the themes.
+
+`-q` disable all output messages.
+
 ## Watch
 
 To watch changes and rebuild the themes automatically, use `/.watch.sh` (don't forget to mark it as executable).

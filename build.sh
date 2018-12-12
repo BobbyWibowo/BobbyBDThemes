@@ -4,7 +4,6 @@ ASSETS_ROOT=assets
 REMOTE_URL="https://blog.fiery.me/BobbyBDThemes"
 BUILD_DIR=build
 PREFIX="Bobby-"
-COPY_VER=bmt
 COPY_TO=~/.config/BetterDiscord/themes
 
 # options
@@ -40,7 +39,7 @@ do
   TARGET_REMOTE="$BUILD_DIR/$PREFIX$DIRECTORY.remote.theme.css"
 
   # empty target
-  [ $quiet -eq 0 ] && echo "Emptying $TARGET..."
+  [ $quiet -eq 0 ] && echo "Emptying $PREFIX$DIRECTORY.css..."
   [ -f $TARGET ] && truncate -s 0 $TARGET || touch $TARGET
 
   # concatenate target with assets
@@ -66,6 +65,12 @@ do
   printf "\n" >> "$TARGET_BD"
   cat "$TARGET" >> "$TARGET_BD"
 
+  # copy bd theme
+  if [ $copy -eq 1 ]; then
+    cp -f "$TARGET_BD" "$COPY_TO"
+    [ $quiet -eq 0 ] && echo "Copied $PREFIX$DIRECTORY.theme.css to $COPY_TO."
+  fi
+
   # make remote theme
   if [ $remote -eq 1 ]; then
     [ $quiet -eq 0 ] && echo "Making remote theme..."
@@ -76,15 +81,3 @@ do
 
   [ $quiet -eq 0 ] && echo "OK."
 done
-
-cd "$DIR"
-# copy build to target directory
-if [ $copy -eq 1 ]; then
-  FILE="$BUILD_DIR/$PREFIX$COPY_VER.theme.css"
-  if [ -f "$FILE" ]; then
-    cp -f "$FILE" "$COPY_TO"
-    [ $quiet -eq 0 ] && echo "Copied \"$COPY_VER\" to $COPY_TO."
-  else
-    echo "ERROR: Could not copy, \"$COPY_VER\" does not exist."
-  fi
-fi
