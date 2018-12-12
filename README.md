@@ -10,9 +10,9 @@ Full version: [Download](https://blog.fiery.me/BobbyBDThemes/build/Bobby-bmt.the
 
 Remote version: [Download](https://blog.fiery.me/BobbyBDThemes/build/Bobby-bmt.remote.theme.css)
 
-> Full version contain all the tweaks in a single file, but you will have to redownload the file whenever you want to update.
->
-> Remote version will remotely load them from this repo, so you will not have to manually update the theme (restarting Discord should load the newest version available).
+Full version contain all the tweaks in a single file, but you will have to redownload the file whenever you want to update.
+
+Remote version will remotely load them from this repo, so you will not have to manually update the theme (restarting Discord should load the newest version available).
 
 ### import()
 
