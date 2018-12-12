@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 ASSETS_ROOT=assets
-REMOTE_VER=full
 REMOTE_URL="https://blog.fiery.me/BobbyBDThemes"
 BUILD_DIR=build
-COPY_VER=full
+PREFIX="Bobby-"
+COPY_VER=bmt
 COPY_TO=~/.config/BetterDiscord/themes
 
 # options
@@ -35,14 +35,16 @@ do
   [ "$DIRECTORY" = "remote" ] && break
 
   [ $quiet -eq 0 ] && echo "Building \"$DIRECTORY\"..."
-  TARGET="$BUILD_DIR/bobby-$DIRECTORY.theme.css"
+  TARGET="$BUILD_DIR/$PREFIX$DIRECTORY.css"
+  TARGET_BD="$BUILD_DIR/$PREFIX$DIRECTORY.theme.css"
+  TARGET_REMOTE="$BUILD_DIR/$PREFIX$DIRECTORY.remote.theme.css"
 
   # empty target
   [ $quiet -eq 0 ] && echo "Emptying $TARGET..."
   [ -f $TARGET ] && truncate -s 0 $TARGET || touch $TARGET
 
   # concatenate target with assets
-  cd "$ASSETS_ROOT/$DIRECTORY"
+  cd "$ASSETS_ROOT/$DIRECTORY/files"
   for FILE in *
   do
     if [[ "$FILE" =~ ^.*\.css$ ]]; then
@@ -57,41 +59,28 @@ do
   [ $quiet -eq 0 ] && echo "Cleaning up..."
   sed -i "$d" "$TARGET"
 
+  # make bd theme
+  [ $quiet -eq 0 ] && echo "Making BD theme..."
+  [ -f $TARGET_BD ] && truncate -s 0 $TARGET_BD || touch $TARGET_BD
+  cat "$ASSETS_ROOT/$DIRECTORY/meta.css" >> "$TARGET_BD"
+  printf "\n" >> "$TARGET_BD"
+  cat "$TARGET" >> "$TARGET_BD"
+
+  # make remote theme
+  if [ $remote -eq 1 ]; then
+    [ $quiet -eq 0 ] && echo "Making remote theme..."
+    [ -f $TARGET_REMOTE ] && truncate -s 0 $TARGET_REMOTE || touch $TARGET_REMOTE
+    cat "$ASSETS_ROOT/$DIRECTORY/meta-remote.css" >> "$TARGET_REMOTE"
+    printf "\n@import url($REMOTE_URL/build/$PREFIX$DIRECTORY.css);\n" >> "$TARGET_REMOTE"
+  fi
+
   [ $quiet -eq 0 ] && echo "OK."
 done
-
-if [ $remote -eq 1 ]; then
-  REMOTE_DIR="$ASSETS_ROOT/remote"
-
-  [ $quiet -eq 0 ] && echo "Building \"remote\"..."
-  TARGET="$BUILD_DIR/bobby-remote.theme.css"
-
-  # empty target
-  [ $quiet -eq 0 ] && echo "Emptying $TARGET..."
-  [ -f $TARGET ] && truncate -s 0 $TARGET || touch $TARGET
-
-  # append with meta tag
-  META="$REMOTE_DIR/00-meta.css"
-  [ $quiet -eq 0 ] && echo "Concatenating $META..."
-  cat $META >> $TARGET
-  printf "\n" >> $TARGET
-
-  [ $quiet -eq 0 ] && echo "Concatenating asset names from \"$REMOTE_VER\"..."
-  cd "$ASSETS_ROOT/$REMOTE_VER"
-  for FILE in *
-  do
-    if [ "$FILE" != "00-meta.css" ] && [[ "$FILE" =~ ^.*\.css$ ]]; then
-      printf "@import url($REMOTE_URL/assets/$REMOTE_VER/$FILE);\n" >> "$TARGET"
-    fi
-  done
-
-  [ $quiet -eq 0 ] && echo "OK."
-fi
 
 cd "$DIR"
 # copy build to target directory
 if [ $copy -eq 1 ]; then
-  FILE="$BUILD_DIR/bobby-$COPY_VER.theme.css"
+  FILE="$BUILD_DIR/$PREFIX$COPY_VER.theme.css"
   if [ -f "$FILE" ]; then
     cp -f "$FILE" "$COPY_TO"
     [ $quiet -eq 0 ] && echo "Copied \"$COPY_VER\" to $COPY_TO."
