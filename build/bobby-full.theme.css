@@ -1,6 +1,6 @@
 //META{"name":"Bobby's BD Themes","description":"A full collection of Bobby's BD themes.","author":"Bobby Wibowo","version":"1.0.0"}*//{}
 
-/** --- 00-general.css --- **/
+/** --- 01-general.css --- **/
 
 :root {
   --font-family-1: 'Ubuntu', sans-serif;
@@ -392,32 +392,6 @@ a[href="/channels/@me"] .badge-1GsMF2 {
   background-image: url(/assets/386884eecd36164487505ddfbac35a9d.svg) !important;
 }
 */
-
-/** --- 13-unsticky-guild-add.css.bak --- **/
-
-/** Un-sticky guilds add **/
-
-body .guildsWrapper-5TJh6A .guild-1EfMGQ.guildsAdd-21_IdK {
-  position: static !important;
-  margin-top: 7px !important;
-}
-
-.guildsWrapper-5TJh6A .guilds-1q_RqH {
-  height: 100% !important;
-}
-
-body .guilds-1q_RqH .guild-1EfMGQ:not(.guildsAdd-21_IdK):last-of-type {
-  margin-bottom: unset !important;
-}
-
-.guildsWrapper-5TJh6A .guilds-1q_RqH {
-  height: 100%;
-  padding-bottom: 0 !important;
-}
-
-.guildsWrapper-5TJh6A .unreadMentionsIndicatorBottom-BXS58x {
-  bottom: 0;
-}
 
 /** --- 15-bmt-fixes.css --- **/
 
