@@ -241,6 +241,15 @@ code.inline,
   width: 8ch;
 }
 
+/** Fix channel list's shadow being hidden underneath chat area **/
+.chat-3bRxxu {
+  z-index: 0;
+}
+
+.channels-Ie2l6A {
+  z-index: 1;
+}
+
 /** --- 11-bmt-flash-mention.css --- **/
 
 /**
