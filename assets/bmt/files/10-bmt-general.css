@@ -202,3 +202,10 @@
 .channels-Ie2l6A {
   z-index: 1;
 }
+
+/** Use rotate transform instead of translateY cause z-index is a total trainwreck **/
+
+.title-3qD0b- .icon-1R19_H.popout-open {
+  transform: rotate(180deg);
+  transition: transform 400ms cubic-bezier(0.3, 0.3, 0, 1);
+}
