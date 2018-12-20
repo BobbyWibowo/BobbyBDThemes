@@ -345,8 +345,32 @@ a[href="/channels/@me"] .badge-1GsMF2 {
 
 /** Fixes due to outdated class names **/
 
-/** Emoji button **/
+/** Temp fix for emoji buttons **/
 
+.sprite-2iCowe {
+  display: none;
+}
+
+.inner-zqa7da > .pickerButtons-v-PPYK {
+  position: absolute !important;
+  right: 0px;
+}
+
+.emojiButton-3uL3Aw {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMTEuOTkgMkM2LjQ3IDIgMiA2LjQ4IDIgMTJzNC40NyAxMCA5Ljk5IDEwQzE3LjUyIDIyIDIyIDE3LjUyIDIyIDEyUzE3LjUyIDIgMTEuOTkgMnpNMTIgMjBjLTQuNDIgMC04LTMuNTgtOC04czMuNTgtOCA4LTggOCAzLjU4IDggOC0zLjU4IDgtOCA4em0zLjUtOWMuODMgMCAxLjUtLjY3IDEuNS0xLjVTMTYuMzMgOCAxNS41IDggMTQgOC42NyAxNCA5LjVzLjY3IDEuNSAxLjUgMS41em0tNyAwYy44MyAwIDEuNS0uNjcgMS41LTEuNVM5LjMzIDggOC41IDggNyA4LjY3IDcgOS41IDcuNjcgMTEgOC41IDExem0zLjUgNi41YzIuMzMgMCA0LjMxLTEuNDYgNS4xMS0zLjVINi44OWMuOCAyLjA0IDIuNzggMy41IDUuMTEgMy41eiIvPjwvc3ZnPg==) !important;
+  background-repeat: no-repeat !important;
+  background-position: 50% !important;
+  background-color: transparent !important;
+  left: -18px !important;
+  top: 15px !important;
+  box-shadow: none !important;
+  transform: none !important;
+  filter: brightness(0.60);
+}
+
+/** Emoji button - bare class name update, no longer works **/
+
+/*
 .pickerButtons-v-PPYK {
   height: 100%;
   top: 0;
@@ -392,9 +416,11 @@ a[href="/channels/@me"] .badge-1GsMF2 {
   width: 75px;
   max-height: initial !important;
 }
+*/
 
 /** Upload modal - Emoji button **/
 
+/*
 .uploadModal-2ifh8j .inner-zqa7da textarea {
   margin-right: 0;
 }
@@ -402,9 +428,11 @@ a[href="/channels/@me"] .badge-1GsMF2 {
 .uploadModal-2ifh8j .emojiButton-3uL3Aw {
   width: 38px;
 }
+*/
 
 /** Channel text area (edit message) - Emoji button **/
 
+/*
 .message-1PNnaP .channelTextArea-1LDbYG .inner-zqa7da .textArea-2Spzkt {
   margin-right: 0;
 }
@@ -412,6 +440,7 @@ a[href="/channels/@me"] .badge-1GsMF2 {
 .message-1PNnaP .channelTextArea-1LDbYG .inner-zqa7da .textArea-2Spzkt .emojiButton-3uL3Aw {
   padding: 2px 0;
 }
+*/
 
 /** Settings page **/
 
@@ -534,6 +563,10 @@ div#app-mount div#magane div.stickerWindow>div.packs div.pack {
 
 .innerDisabled-2mc-iF div#magane {
   display: none !important;
+}
+
+:not(.innerDisabled-2mc-iF) > .textArea-2Spzkt {
+  padding-right: 140px;
 }
 
 /** --- 30-bmt-serverfolders.css --- **/

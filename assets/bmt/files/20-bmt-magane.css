@@ -74,3 +74,7 @@ div#app-mount div#magane div.stickerWindow>div.packs div.pack {
 .innerDisabled-2mc-iF div#magane {
   display: none !important;
 }
+
+:not(.innerDisabled-2mc-iF) > .textArea-2Spzkt {
+  padding-right: 140px;
+}
