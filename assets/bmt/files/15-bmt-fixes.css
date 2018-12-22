@@ -148,14 +148,16 @@
   background: var(--accent-color);
 }
 
-/** Channels **/
+/** Channels & Members list scrollbars **/
 
+.membersWrap-2h-GB4 .scroller-2FKFPG::-webkit-scrollbar,
 .channels-Ie2l6A .scroller-2wx7Hm::-webkit-scrollbar {
   background: var(--lvl2) !important;
   border-radius: 0 !important;
   width: 8px !important;
 }
 
+.membersWrap-2h-GB4 .scroller-2FKFPG::-webkit-scrollbar-thumb,
 .channels-Ie2l6A .scroller-2wx7Hm::-webkit-scrollbar-thumb {
   border-radius: 0 !important;
   background: rgba(255, 255, 255, 0.05) !important;
@@ -164,14 +166,17 @@
   border-left: 4px solid var(--lvl2) !important;
 }
 
+.membersWrap-2h-GB4 .scroller-2FKFPG::-webkit-scrollbar-thumb:hover,
 .channels-Ie2l6A .scroller-2wx7Hm::-webkit-scrollbar-thumb:hover {
   background: var(--white1) !important;
 }
 
+.membersWrap-2h-GB4 .scroller-2FKFPG::-webkit-scrollbar-thumb:active,
 .channels-Ie2l6A .scroller-2wx7Hm::-webkit-scrollbar-thumb:active {
   background: var(--white2) !important;
 }
 
+.membersWrap-2h-GB4 .scroller-2FKFPG::-webkit-scrollbar-track,
 .channels-Ie2l6A .scroller-2wx7Hm::-webkit-scrollbar-track {
   background: transparent !important;
 }
