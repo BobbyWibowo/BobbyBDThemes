@@ -25,16 +25,9 @@ div#app-mount div#magane div.channel-textarea-stickers {
   top: 0 !important;
   right: 67px !important;
   opacity: 0.4;
-  padding: 2px 0 2px 16px;
+  padding: 2px 8px;
   width: 67px;
   box-sizing: border-box;
-}
-
-.emojiButton-2wRZts {
-  padding-left: 0 !important;
-  padding-right: 16px !important;
-  background-origin: content-box !important;
-  width: 67px !important;
 }
 
 div#app-mount div#magane div.channel-textarea-stickers:hover {
@@ -75,6 +68,6 @@ div#app-mount div#magane div.stickerWindow>div.packs div.pack {
   display: none !important;
 }
 
-:not(.innerDisabled-2mc-iF) > .textArea-2Spzkt {
+form>#channel-text-area-wrapper :not(.innerDisabled-2mc-iF) > .textArea-2Spzkt {
   padding-right: 140px;
 }
