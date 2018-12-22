@@ -2,17 +2,45 @@
 
 /** Emoji button (highly experimental) **/
 
-.pickerButtons-v-PPYK {
-  padding-right: 0;
+.channelTextArea-1LDbYG .inner-zqa7da {
   height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 
-.pickerButtons-v-PPYK > :not(.emojiButton-3uL3Aw) {
-  /* Force hide GIF button (untested) */
-  display: none !important;
+.channelTextArea-1LDbYG .inner-zqa7da .textArea-2Spzkt {
+  padding-right: 0;
+}
+
+.theme-dark .button-3AYNKb,
+.theme-dark .inner-zqa7da:hover .pickerButtons-v-PPYK,
+.inner-zqa7da .textArea-2Spzkt:focus ~ .pickerButtons-v-PPYK {
+  opacity: 1;
+}
+
+.pickerButtons-v-PPYK {
+  padding-right: 0;
+  height: auto;
+  background: #3A3A3A;
+  opacity: 0.64;
+  transition: all 200ms ease;
+}
+
+.pickerButtons-v-PPYK>.button-38aScr {
+  margin: 0;
+  background: none;
+  transform: none;
+  transition: none;
+  opacity: .24;
+  width: 70px;
+}
+
+.pickerButtons-v-PPYK>.button-38aScr:hover {
+  box-shadow: none;
+  opacity: 1;
+}
+
+.pickerButtons-v-PPYK .icon-3D60ES {
+  transition: none;
+  transform: scale(.85714) !important;
 }
 
 .emojiButton-3uL3Aw .sprite-2iCowe {
@@ -25,14 +53,11 @@
   background-position: 50% !important;
   background-color: transparent !important;
   transition: all 100ms ease;
-  width: 80px;
   box-shadow: none !important;
   transform: none !important;
-
-  display: block;
   margin: 0;
   height: 100%;
-  width: 75px;
+  width: 70px;
   max-height: 400px !important;
 }
 
@@ -43,13 +68,14 @@
   transition: all 200ms ease;
 }
 
-.theme-dark .inner-zqa7da:hover .emojiButton-3uL3Aw {
+.theme-dark .inner-zqa7da:hover .pickerButtons-v-PPYK>button {
   opacity: 0.3;
-  transition: all 200ms ease; }
+  transition: all 200ms ease;
+}
 
-.theme-dark .inner-zqa7da .emojiButton-3uL3Aw:hover,
-.theme-dark .inner-zqa7da .emojiButton-3uL3Aw:active,
-.theme-dark .inner-zqa7da .emojiButton-3uL3Aw.popout-open {
+.theme-dark .inner-zqa7da .pickerButtons-v-PPYK>button:hover,
+.theme-dark .inner-zqa7da .pickerButtons-v-PPYK>button.active-23Nm0T,
+.theme-dark .inner-zqa7da .pickerButtons-v-PPYK>button.popout-open {
   opacity: 1;
   transition: all 100ms ease;
 }

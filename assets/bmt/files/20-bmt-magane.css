@@ -13,26 +13,43 @@ div#app-mount div#magane ul {
   font-family: inherit !important;
 }
 
+div#app-mount div#magane {
+  height: 100%;
+}
+
 div#app-mount div#magane div.channel-textarea-stickers {
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-image: url(/assets/a42df564f00ed8bbca652dc9345d3834.svg);
+  background-image: url(/assets/98b39a3802f75cda51a0b1b539aa7609.svg);
   background-origin: content-box;
   background-attachment: scroll;
   background-clip: border-box;
   background-size: 22px;
   height: 100%;
   top: 0 !important;
-  right: 67px !important;
-  opacity: 0.4;
-  padding: 2px 8px;
-  width: 67px;
+  right: 0 !important;
+  opacity: 0.26;
+  padding: 2px 16px;
+  width: 70px;
   box-sizing: border-box;
+  transform: none;
+  display: flex;
+  position: static !important;
 }
 
-div#app-mount div#magane div.channel-textarea-stickers:hover {
+div#app-mount .inner-zqa7da:hover div#magane div.channel-textarea-stickers {
+  opacity: 0.3;
+  transition: all 200ms ease;
+}
+
+div#app-mount .inner-zqa7da div#magane div.channel-textarea-stickers:hover {
   opacity: 1;
   transform: none;
+}
+
+div#app-mount .inner-zqa7da div#magane div.channel-textarea-stickers.active {
+  opacity: 1;
+  transition: all 100ms ease;
 }
 
 div#app-mount div#magane div.stickerWindow {
@@ -66,8 +83,4 @@ div#app-mount div#magane div.stickerWindow>div.packs div.pack {
 
 .innerDisabled-2mc-iF div#magane {
   display: none !important;
-}
-
-form>#channel-text-area-wrapper :not(.innerDisabled-2mc-iF) > .textArea-2Spzkt {
-  padding-right: 140px;
 }

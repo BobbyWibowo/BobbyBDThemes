@@ -209,3 +209,9 @@
   transform: rotate(180deg);
   transition: transform 400ms cubic-bezier(0.3, 0.3, 0, 1);
 }
+
+/** Nitro Gift options **/
+
+.theme-dark .option-1l2vXE {
+  background: none;
+}
