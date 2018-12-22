@@ -4,15 +4,15 @@ Bobby's personal collection of BD themes (or more like "tweaks").
 
 ## Installation (BMT's Tweaks)
 
+This is a compilaton of tweaks for [Beard's Material Theme](https://github.com/BeardDesign1/Material-design-theme-ressources).
+
 ### BetterDiscord theme
 
 Full version: [Download](https://blog.fiery.me/BobbyBDThemes/build/Bobby-bmt.theme.css)
+> This contain all the tweaks in a single file, but you will have to redownload the file whenever you want to update.
 
 Remote version: [Download](https://blog.fiery.me/BobbyBDThemes/build/Bobby-bmt.remote.theme.css)
-
-Full version contain all the tweaks in a single file, but you will have to redownload the file whenever you want to update.
-
-Remote version will remotely load them from this repo, so you will not have to manually update the theme (restarting Discord should load the newest version available).
+> This will remotely load the tweaks from this repo, so you will not have to manually update the theme (restarting Discord should always load the newest version available).
 
 ### import()
 
