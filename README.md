@@ -28,12 +28,12 @@ That's pretty much what the remote version does, by the way.
 
 If you only need some parts of the tweaks instead of the whole thing, you can choose to import only some of them.
 
-First head to [/assets/bmt/files](https://github.com/BobbyWibowo/BobbyBDThemes/tree/master/assets/bmt/files) to view all available modules.
+First head to [https://discordapp.com/assets/bmt/files](https://github.com/BobbyWibowo/BobbyBDThemes/tree/masterhttps://discordapp.com/assets/bmt/files) to view all available modules.
 
 For example, to import `20-bmt-magane.css`, its import line will be:
 
 ```css
-@import url(https://blog.fiery.me/BobbyBDThemes/assets/bmt/files/20-bmt-magane.css);
+@import url(https://blog.fiery.me/BobbyBDThemeshttps://discordapp.com/assets/bmt/files/20-bmt-magane.css);
 ```
 
 ## Build
