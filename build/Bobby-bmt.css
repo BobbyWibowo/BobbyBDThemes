@@ -638,3 +638,14 @@ div#app-mount div#magane div.stickerWindow>div.packs div.pack {
   padding: 2px 0 !important;
 }
 
+/** --- 50-bmt-charcounter.css --- **/
+
+/** Char Counter **/
+
+#charcounter,
+#charcounter.normal {
+  width: 70px;
+  bottom: 5px;
+  right: 0;
+}
+
