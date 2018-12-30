@@ -26,12 +26,14 @@ ASSETS_ROOT="$DIR/$ASSETS_ROOT"
 BUILD_DIR="$DIR/$BUILD_DIR"
 
 # we loop through all directories to allow multiple versions support
-cd $ASSETS_ROOT
-for DIRECTORY in *
+echo $ASSETS_ROOT
+for DIRECTORY in ${ASSETS_ROOT}/*/
 do
-  # skip regular files and "remote" directory
+  DIRECTORY="${DIRECTORY%/}"
+  DIRECTORY="${DIRECTORY##*/}"
+
+  # skip regular files
   [ -f $DIRECTORY ] && break
-  [ "$DIRECTORY" = "remote" ] && break
 
   [ $quiet -eq 0 ] && echo "Building \"$DIRECTORY\"..."
   TARGET="$BUILD_DIR/$PREFIX$DIRECTORY.css"
@@ -43,12 +45,11 @@ do
   [ -f $TARGET ] && truncate -s 0 $TARGET || touch $TARGET
 
   # concatenate target with assets
-  cd "$ASSETS_ROOT/$DIRECTORY/files"
-  for FILE in *
+  for FILE in $ASSETS_ROOT/$DIRECTORY/files/*
   do
     if [[ "$FILE" =~ ^.*\.css$ ]]; then
-      [ $quiet -eq 0 ] && echo "Concatenating $FILE..."
-      [ "$FILE" != "00-meta.css" ] && printf "/** --- $FILE --- **/\n\n" >> "$TARGET"
+      [ $quiet -eq 0 ] && echo "Concatenating ${FILE##*/}..."
+      printf "/** --- ${FILE##*/} --- **/\n\n" >> "$TARGET"
       cat "$FILE" >> "$TARGET"
       printf "\n" >> "$TARGET"
     fi
