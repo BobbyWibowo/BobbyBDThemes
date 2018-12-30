@@ -6,6 +6,8 @@ Bobby's personal collection of BD themes (or more like "tweaks").
 
 This is a compilaton of tweaks for [Beard's Material Theme](https://github.com/BeardDesign1/Material-design-theme-ressources).
 
+As this contains only tweaks, of course this needs to be loaded alongside BMT itself. If possible, make sure it's loaded *after* BMT.
+
 ### BetterDiscord theme
 
 Full version: [Download](https://blog.fiery.me/BobbyBDThemes/build/Bobby-bmt.theme.css)
@@ -16,7 +18,7 @@ Remote version: [Download](https://blog.fiery.me/BobbyBDThemes/build/Bobby-bmt.r
 
 ### import()
 
-You can use this line to import the theme from your Custom CSS menu:
+You can use this line to import the theme:
 
 ```css
 @import url(https://blog.fiery.me/BobbyBDThemes/build/Bobby-bmt.css);
@@ -28,13 +30,15 @@ That's pretty much what the remote version does, by the way.
 
 If you only need some parts of the tweaks instead of the whole thing, you can choose to import only some of them.
 
-First head to [https://discordapp.com/assets/bmt/files](https://github.com/BobbyWibowo/BobbyBDThemes/tree/masterhttps://discordapp.com/assets/bmt/files) to view all available modules.
+First head to [/assets/bmt/files](https://github.com/BobbyWibowo/BobbyBDThemes/tree/master/assets/bmt/files) to view all available modules.
 
 For example, to import `20-bmt-magane.css`, its import line will be:
 
 ```css
-@import url(https://blog.fiery.me/BobbyBDThemeshttps://discordapp.com/assets/bmt/files/20-bmt-magane.css);
+@import url(https://blog.fiery.me/BobbyBDThemes/assets/bmt/files/20-bmt-magane.css);
 ```
+
+> I tried to make the modules work by themselves. But certain module can only work alongside other modules (e.i. 20-bmt-magame.css work best with 15-bmt-fixes.css as it contains the necessary fixes for picker buttons).
 
 ## Build
 
