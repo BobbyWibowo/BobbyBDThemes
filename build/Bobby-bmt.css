@@ -276,15 +276,12 @@ a[href="/channels/@me"] .badge-1GsMF2 {
 
 @keyframes mention-flash {
   0% {
-    -webkit-box-shadow: 0 0px 10px rgba(240, 71, 71, 0), 0 0 0 0px rgba(240, 71, 71, .4);
     box-shadow: 0 0px 10px rgba(240, 71, 71, 0), 0 0 0 0px rgba(240, 71, 71, .4);
   }
   50% {
-    -webkit-box-shadow: 0 0px 20px 15px rgba(240, 71, 71, .3), 0 0 0 4px rgba(240, 71, 71, .7);
     box-shadow: 0 0px 20px 15px rgba(240, 71, 71, .3), 0 0 0 4px rgba(240, 71, 71, .7);
   }
   100% {
-    -webkit-box-shadow: 0 0px 25px 16px rgba(240, 71, 71, 0), 0 0 3px 8px rgba(240, 71, 71, 0);
     box-shadow: 0 0px 25px 16px rgba(240, 71, 71, 0), 0 0 3px 8px rgba(240, 71, 71, 0);
   }
 }
