@@ -5,6 +5,9 @@
 
 @import url(https://rawgit.com/rauenzi/BetterDiscordAddons/master/Themes/RadialStatus/import/RadialStatus.css);
 
+/** Noto Color Emojis - this will replace Discord's built-in emojis, feel free to remove if you want **/
+@import url(https://intrnl.github.io/discordcustomizations/emojiNotoColor/dist/themefile.css);
+
 /** Bobby-bmt.css **/
 /** --- 01-general.css --- **/
 
@@ -683,7 +686,3 @@ div#app-mount div#magane div.stickerWindow>div.packs div.pack {
   bottom: 5px;
   right: 0;
 }
-
-
-
-@import url(https://intrnl.github.io/discordcustomizations/emojiNotoColor/dist/themefile.css);

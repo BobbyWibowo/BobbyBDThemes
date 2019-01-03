@@ -63,7 +63,7 @@ do
 
   # remove extra white space
   [ $quiet -eq 0 ] && echo "Cleaning up..."
-  sed -i "$d" "$TARGET"
+  sed -e :a -e '$d;N;1,1ba' -e 'P;D' -i "$TARGET"
 
   # make bd theme
   [ $quiet -eq 0 ] && echo "Making BD theme..."
@@ -92,6 +92,7 @@ done
 if [ $enhanceddiscord -eq 1 ]; then
   [ $quiet -eq 0 ] && echo "Making ED theme..."
   awk "/\/\*\* Bobby-bmt\.css \*\*\//{f=1;print;while (getline < \"$ED_BUILD_FROM\"){print}}//{f=0}!f" build-ed-template.css > "$BUILD_DIR/$ED_BUILD_NAME"
+  sed -e :a -e '$d;N;1,1ba' -e 'P;D' -i "$BUILD_DIR/$ED_BUILD_NAME"
 
   if [ $copy -eq 1 ]; then
     cp -f "$BUILD_DIR/$ED_BUILD_NAME" "$ED_COPY_TO"
