@@ -1,3 +1,11 @@
+/** This is for EnhancedDiscord **/
+
+@import url(https://rawgit.com/BeardDesign1/Material-design-theme-ressources/master/code-files/beta/beta.css);
+@import url(https://rawgit.com/BeardDesign1/Material-design-theme-ressources/master/code-files/beta/notifications.css);
+
+@import url(https://rawgit.com/rauenzi/BetterDiscordAddons/master/Themes/RadialStatus/import/RadialStatus.css);
+
+/** Bobby-bmt.css **/
 /** --- 01-general.css --- **/
 
 :root {
@@ -676,3 +684,6 @@ div#app-mount div#magane div.stickerWindow>div.packs div.pack {
   right: 0;
 }
 
+
+
+@import url(https://intrnl.github.io/discordcustomizations/emojiNotoColor/dist/themefile.css);

@@ -38,3 +38,9 @@ code.inline,
 .ownerIcon-uZ6mE7 {
   display: none;
 }
+
+/** Remove Nitro Gift button from textarea **/
+
+.buttons-205you>.button-38aScr[tabindex="2"] {
+  display: none;
+}

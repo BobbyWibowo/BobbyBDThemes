@@ -6,14 +6,21 @@ BUILD_DIR=build
 PREFIX="Bobby-"
 COPY_TO=~/.config/BetterDiscord/themes
 
+# for EnhancedDiscord (with -e option)
+ED_BUILD_FROM="build/${PREFIX}bmt.css"
+ED_BUILD_NAME="${PREFIX}bmt.ed.css"
+ED_COPY_TO=~/.config/EnhancedDiscord/plugins
+
 # options
 copy=0
+enhanceddiscord=0
 remote=0
 quiet=0
 
-while getopts 'crq' flag; do
+while getopts 'cerq' flag; do
   case "${flag}" in
     c) copy=1 ;;
+    e) enhanceddiscord=1 ;;
     r) remote=1 ;;
     q) quiet=1 ;;
     *) break ;;
@@ -26,7 +33,6 @@ ASSETS_ROOT="$DIR/$ASSETS_ROOT"
 BUILD_DIR="$DIR/$BUILD_DIR"
 
 # we loop through all directories to allow multiple versions support
-echo $ASSETS_ROOT
 for DIRECTORY in ${ASSETS_ROOT}/*/
 do
   DIRECTORY="${DIRECTORY%/}"
@@ -82,3 +88,15 @@ do
 
   [ $quiet -eq 0 ] && echo "OK."
 done
+
+if [ $enhanceddiscord -eq 1 ]; then
+  [ $quiet -eq 0 ] && echo "Making ED theme..."
+  awk "/\/\*\* Bobby-bmt\.css \*\*\//{f=1;print;while (getline < \"$ED_BUILD_FROM\"){print}}//{f=0}!f" build-ed-template.css > "$BUILD_DIR/$ED_BUILD_NAME"
+
+  if [ $copy -eq 1 ]; then
+    cp -f "$BUILD_DIR/$ED_BUILD_NAME" "$ED_COPY_TO"
+    [ $quiet -eq 0 ] && echo "Copied $ED_BUILD_NAME.theme.css to $ED_COPY_TO."
+  fi
+
+  [ $quiet -eq 0 ] && echo "OK."
+fi
