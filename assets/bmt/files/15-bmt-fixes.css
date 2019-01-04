@@ -9,27 +9,32 @@
 
 .channelTextArea-1LDbYG .inner-zqa7da .textArea-2Spzkt,
 .channelTextArea-1LDbYG .inner-zqa7da .buttons-205you {
-  padding-right: 0;
   background: none !important;
   opacity: 0.64;
   transition: all 200ms ease;
 }
 
 .channelTextArea-1LDbYG .inner-zqa7da.innerDisabled-2mc-iF .textArea-2Spzkt,
-.channelTextArea-1LDbYG .inner-zqa7da.innerDisabled-2mc-iF .buttons-205you {
+.channelTextArea-1LDbYG .inner-zqa7da .buttons-205you,
+.channelTextArea-1LDbYG .inner-zqa7da .textArea-2Spzkt:focus ~ .buttons-205you  {
   opacity: 1;
 }
 
 .channelTextArea-1LDbYG .inner-zqa7da:not(.innerDisabled-2mc-iF):hover .textArea-2Spzkt,
-.channelTextArea-1LDbYG .inner-zqa7da:not(.innerDisabled-2mc-iF):hover .buttons-205you,
-.channelTextArea-1LDbYG .inner-zqa7da .textArea-2Spzkt:focus,
-.channelTextArea-1LDbYG .inner-zqa7da .textArea-2Spzkt:focus ~ .buttons-205you {
+.channelTextArea-1LDbYG .inner-zqa7da .textArea-2Spzkt:focus {
   background: #3A3A3A !important;
   opacity: 1;
 }
 
+.textArea-2Spzkt {
+  padding-right: 140px;
+}
+
 .buttons-205you {
-  height: auto;
+  padding-right: 0;
+  height: 100%;
+  position: absolute;
+  right: 0;
 }
 
 .buttons-205you>.button-38aScr {
