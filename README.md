@@ -11,10 +11,17 @@ As this contains only tweaks, of course this needs to be loaded alongside BMT it
 ### BetterDiscord theme
 
 Full version: [Download](https://blog.fiery.me/BobbyBDThemes/build/Bobby-bmt.theme.css)
-> This contain all the tweaks in a single file, but you will have to redownload the file whenever you want to update.
+> This contain all the tweaks in a single file, but you will have to redownload the file to update.
 
 Remote version: [Download](https://blog.fiery.me/BobbyBDThemes/build/Bobby-bmt.remote.theme.css)
-> This will remotely load the tweaks from this repo, so you will not have to manually update the theme (restarting Discord should always load the newest version available).
+> This will remotely load the tweaks from this repo, so you will not have to manually update the theme (restarting Discord should generally be enough to update the theme).
+
+### EnhancedDiscord theme
+
+[Download](https://blog.fiery.me/BobbyBDThemes/build/Bobby-bmt.ed.css)
+> This contain all the tweaks in a single file, along with some [EnhancedDiscord-exclusive tweaks](https://github.com/BobbyWibowo/BobbyBDThemes/tree/master/assets/bmt-ed/files), but you will have to redownload the file to update.
+>
+> It uses `build-ed-template.css` as the template, which already includes `@import` lines for BMT itself.
 
 ### import()
 
@@ -38,7 +45,7 @@ For example, to import `20-bmt-magane.css`, its import line will be:
 @import url(https://blog.fiery.me/BobbyBDThemes/assets/bmt/files/20-bmt-magane.css);
 ```
 
-> I tried to make the modules work by themselves. But certain module can only work alongside other modules (e.i. 20-bmt-magame.css work best with 15-bmt-fixes.css as it contains the necessary fixes for picker buttons).
+> I tried to make the modules work by themselves, but certain module can only work alongside other modules (e.i. `20-bmt-magane.css` will only work best with `15-bmt-fixes.css` as it contains the necessary fixes for textarea buttons).
 
 ## Build
 
@@ -46,11 +53,14 @@ Mark `build.sh` as executable by doing `chmod o+x build.sh`, then you can run it
 
 Options:
 
-`-c` copy BD themes to `~/.config/BetterDiscord/themes`.
+`-c` Copy BD themes to `~/.config/BetterDiscord/themes`.
 
-`-r` build remote version of the themes.
+`-e` Build EnhancedDiscord-compatible theme using `build-ed-template.css` as template.
+> If used with `-c`, also copy the theme to `~/.config/EnhancedDiscord/plugins`.
 
-`-q` disable all output messages.
+`-r` Build remote version of the themes.
+
+`-q` Disable all output messages.
 
 ## Watch
 
