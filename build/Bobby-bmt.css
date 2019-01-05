@@ -246,12 +246,21 @@ code.inline,
 }
 
 /** Fix channel list's shadow being hidden underneath chat area **/
+
 .chat-3bRxxu {
   z-index: 0;
 }
 
 .channels-Ie2l6A {
   z-index: 1;
+}
+
+.channels-Ie2l6A .container-2Thooq {
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+.chat-3bRxxu form .channelTextArea-1LDbYG {
+  z-index: 3;
 }
 
 /** Use rotate transform instead of translateY cause z-index is a total trainwreck **/
