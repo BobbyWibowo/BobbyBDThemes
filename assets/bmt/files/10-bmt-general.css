@@ -122,14 +122,6 @@
   margin-bottom: 60px !important;
 }
 
-/** Fix nitro store button **/
-
-/*
-.viewGamesButton-2UgRrs {
-  background-color: #fff !important;
-}
-*/
-
 /** Message Controls **/
 
 .reactionBtn-2na4rd {
@@ -169,12 +161,6 @@
 
 .container-1YxwTf>.content-3dzVd8:first-child::after {
   display: none;
-}
-
-/** Fix cancel button in Nitro tier card **/
-
-.tierGrandfathered-R6zrrD .lookInverted-2D7oAl.colorBrand-3pXr91 {
-  background: #fff !important;
 }
 
 /** Remove margins from emojis **/

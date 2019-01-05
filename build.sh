@@ -7,8 +7,11 @@ PREFIX="Bobby-"
 COPY_TO=~/.config/BetterDiscord/themes
 
 # for EnhancedDiscord (with -e option)
-ED_BUILD_FROM="build/${PREFIX}bmt.css"
-ED_BUILD_NAME="${PREFIX}bmt.ed.css"
+ED_BUILD_FROM=(
+  bmt
+  bmt-ed
+)
+ED_BUILD_NAME="bmt.ed.css"
 ED_COPY_TO=~/.config/EnhancedDiscord/plugins
 
 # options
@@ -61,42 +64,59 @@ do
     fi
   done
 
-  # remove extra white space
+  # remove extra newline
   [ $quiet -eq 0 ] && echo "Cleaning up..."
-  sed -e :a -e '$d;N;1,1ba' -e 'P;D' -i "$TARGET"
+  sed -i "$ d" "$TARGET"
 
-  # make bd theme
-  [ $quiet -eq 0 ] && echo "Making BD theme..."
-  [ -f $TARGET_BD ] && truncate -s 0 $TARGET_BD || touch $TARGET_BD
-  cat "$ASSETS_ROOT/$DIRECTORY/meta.css" >> "$TARGET_BD"
-  printf "\n" >> "$TARGET_BD"
-  cat "$TARGET" >> "$TARGET_BD"
 
-  # copy bd theme
-  if [ $copy -eq 1 ]; then
-    cp -f "$TARGET_BD" "$COPY_TO"
-    [ $quiet -eq 0 ] && echo "Copied $PREFIX$DIRECTORY.theme.css to $COPY_TO."
-  fi
+  if [ -f $ASSETS_ROOT/$DIRECTORY/meta.css ]; then
+    # make bd theme
+    [ $quiet -eq 0 ] && echo "Making BD theme..."
+    [ -f $TARGET_BD ] && truncate -s 0 $TARGET_BD || touch $TARGET_BD
+    cat "$ASSETS_ROOT/$DIRECTORY/meta.css" >> "$TARGET_BD"
+    printf "\n" >> "$TARGET_BD"
+    cat "$TARGET" >> "$TARGET_BD"
 
-  # make remote theme
-  if [ $remote -eq 1 ]; then
-    [ $quiet -eq 0 ] && echo "Making remote theme..."
-    [ -f $TARGET_REMOTE ] && truncate -s 0 $TARGET_REMOTE || touch $TARGET_REMOTE
-    cat "$ASSETS_ROOT/$DIRECTORY/meta-remote.css" >> "$TARGET_REMOTE"
-    printf "\n@import url($REMOTE_URL/build/$PREFIX$DIRECTORY.css);\n" >> "$TARGET_REMOTE"
+    # copy bd theme
+    if [ $copy -eq 1 ]; then
+      cp -f "$TARGET_BD" "$COPY_TO"
+      [ $quiet -eq 0 ] && echo "Copied $PREFIX$DIRECTORY.theme.css to $COPY_TO."
+    fi
+
+    # make remote bd theme
+    if [ $remote -eq 1 ]; then
+      [ $quiet -eq 0 ] && echo "Making remote theme..."
+      [ -f $TARGET_REMOTE ] && truncate -s 0 $TARGET_REMOTE || touch $TARGET_REMOTE
+      cat "$ASSETS_ROOT/$DIRECTORY/meta-remote.css" >> "$TARGET_REMOTE"
+      printf "\n@import url($REMOTE_URL/build/$PREFIX$DIRECTORY.css);\n" >> "$TARGET_REMOTE"
+    fi
   fi
 
   [ $quiet -eq 0 ] && echo "OK."
 done
 
 if [ $enhanceddiscord -eq 1 ]; then
+  BUILD_NAME="$PREFIX$ED_BUILD_NAME"
+  TARGET="$BUILD_DIR/$BUILD_NAME"
+
   [ $quiet -eq 0 ] && echo "Making ED theme..."
-  awk "/\/\*\* Bobby-bmt\.css \*\*\//{f=1;print;while (getline < \"$ED_BUILD_FROM\"){print}}//{f=0}!f" build-ed-template.css > "$BUILD_DIR/$ED_BUILD_NAME"
-  sed -e :a -e '$d;N;1,1ba' -e 'P;D' -i "$BUILD_DIR/$ED_BUILD_NAME"
+
+  cat build-ed-template.css > "$BUILD_DIR/$BUILD_NAME"
+
+  for FILE in "${ED_BUILD_FROM[@]}"
+  do
+    [ $quiet -eq 0 ] && echo "Inserting \"$FILE\"..."
+    REPLACEMENT=$(<"build/$PREFIX$FILE.css")
+    STRING="\/\*\* INSERT: $FILE \*\*\/"
+    while IFS= read -r line; do
+      echo "${line/$STRING/$REPLACEMENT}" >> "$TARGET.tmp"
+    done < "$TARGET"
+    mv -f "$TARGET.tmp" "$TARGET"
+  done
 
   if [ $copy -eq 1 ]; then
-    cp -f "$BUILD_DIR/$ED_BUILD_NAME" "$ED_COPY_TO"
-    [ $quiet -eq 0 ] && echo "Copied $ED_BUILD_NAME.theme.css to $ED_COPY_TO."
+    cp -f "$TARGET" "$ED_COPY_TO"
+    [ $quiet -eq 0 ] && echo "Copied $BUILD_NAME.theme.css to $ED_COPY_TO."
   fi
 
   [ $quiet -eq 0 ] && echo "OK."

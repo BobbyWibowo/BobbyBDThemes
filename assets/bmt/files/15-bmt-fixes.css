@@ -16,7 +16,7 @@
 
 .channelTextArea-1LDbYG .inner-zqa7da.innerDisabled-2mc-iF .textArea-2Spzkt,
 .channelTextArea-1LDbYG .inner-zqa7da .buttons-205you,
-.channelTextArea-1LDbYG .inner-zqa7da .textArea-2Spzkt:focus ~ .buttons-205you  {
+.channelTextArea-1LDbYG .inner-zqa7da .textArea-2Spzkt:focus + .buttons-205you  {
   opacity: 1;
 }
 

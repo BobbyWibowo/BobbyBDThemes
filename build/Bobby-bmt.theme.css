@@ -175,14 +175,6 @@ code.inline,
   margin-bottom: 60px !important;
 }
 
-/** Fix nitro store button **/
-
-/*
-.viewGamesButton-2UgRrs {
-  background-color: #fff !important;
-}
-*/
-
 /** Message Controls **/
 
 .reactionBtn-2na4rd {
@@ -222,12 +214,6 @@ code.inline,
 
 .container-1YxwTf>.content-3dzVd8:first-child::after {
   display: none;
-}
-
-/** Fix cancel button in Nitro tier card **/
-
-.tierGrandfathered-R6zrrD .lookInverted-2D7oAl.colorBrand-3pXr91 {
-  background: #fff !important;
 }
 
 /** Remove margins from emojis **/
@@ -411,7 +397,7 @@ a[href="/channels/@me"] .badge-1GsMF2 {
 
 .channelTextArea-1LDbYG .inner-zqa7da.innerDisabled-2mc-iF .textArea-2Spzkt,
 .channelTextArea-1LDbYG .inner-zqa7da .buttons-205you,
-.channelTextArea-1LDbYG .inner-zqa7da .textArea-2Spzkt:focus ~ .buttons-205you  {
+.channelTextArea-1LDbYG .inner-zqa7da .textArea-2Spzkt:focus + .buttons-205you  {
   opacity: 1;
 }
 
