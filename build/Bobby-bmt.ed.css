@@ -483,6 +483,7 @@ a[href="/channels/@me"] .badge-1GsMF2 {
 
 .uploadModal-2ifh8j .inner-zqa7da {
   margin-right: 5px;
+  border-radius: 5px;
 }
 
 .uploadModal-2ifh8j .inner-zqa7da .textArea-2Spzkt,
@@ -491,12 +492,7 @@ a[href="/channels/@me"] .badge-1GsMF2 {
 }
 
 .uploadModal-2ifh8j .inner-3nWsbo .comment-4IWttf .channelTextArea-1LDbYG .inner-zqa7da .textArea-2Spzkt {
-  border-radius: 5px 0 0 5px !important;
-}
-
-.uploadModal-2ifh8j .inner-3nWsbo .comment-4IWttf .channelTextArea-1LDbYG .inner-zqa7da .buttons-205you {
-  border-radius: 0 5px 5px 0 !important;
-  background: rgba(255, 255, 255, 0.1) !important;
+  padding-right: 38px;
 }
 
 .uploadModal-2ifh8j .emojiButton-3uL3Aw {
@@ -508,16 +504,11 @@ a[href="/channels/@me"] .badge-1GsMF2 {
 .message-1PNnaP .channelTextArea-1LDbYG .inner-zqa7da {
   margin-right: 5px;
   background: #3A3A3A !important;
-  border-radius: 3px;
 }
 
 .message-1PNnaP .channelTextArea-1LDbYG .inner-zqa7da .textArea-2Spzkt {
   margin-right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.message-1PNnaP .channelTextArea-1LDbYG .inner-zqa7da .buttons-205you {
-  border-radius: 0 3px 3px 0;
+  padding-right: 38px;
 }
 
 .message-1PNnaP .emojiButton-3uL3Aw {
@@ -694,4 +685,13 @@ div#app-mount div#magane div.stickerWindow>div.packs div.pack {
   width: 70px;
   bottom: 5px;
   right: 0;
+}
+
+.message-1PNnaP #charcounter {
+  left: 0;
+  bottom: -16px;
+}
+
+.uploadModal-2ifh8j #charcounter {
+  bottom: -16px;
 }
