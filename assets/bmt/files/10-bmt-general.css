@@ -51,7 +51,13 @@
 /** Page indicator at the bottom **/
 
 .theme-dark .paginator-166-09 {
-  background: var(--lvl1);
+  background-color: var(--lvl1);
+}
+
+/** Discord key modal fix **/
+
+.theme-dark .card-3Qj_Yx{
+    background-color: var(--lvl1);
 }
 
 /** Fade modal bg **/
