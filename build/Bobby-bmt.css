@@ -558,7 +558,12 @@ a[href="/channels/@me"] .badge-1GsMF2 {
 
 /** --- 20-bmt-magane.css --- **/
 
-/** Magane custom styling for BMT **/
+/**
+  Magane custom styling for BMT.
+  Only compatible with Bobby's fork of Magane:
+  https://github.com/BobbyWibowo/Magane/blob/master/HOWTO.md
+  Minimum version requirement: 0.1.5
+**/
 
 div#app-mount div#magane a,
 div#app-mount div#magane button,
@@ -578,23 +583,18 @@ div#app-mount div#magane {
 }
 
 div#app-mount div#magane div.channel-textarea-stickers {
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-image: url(https://discordapp.com/assets/98b39a3802f75cda51a0b1b539aa7609.svg);
-  background-origin: content-box;
-  background-attachment: scroll;
-  background-clip: border-box;
-  background-size: 22px;
-  height: 100%;
-  top: 0 !important;
-  right: 0 !important;
+  display: flex;
   opacity: 0.26;
   padding: 2px 16px;
+  transform: none;
+  min-height: 32px;
+  max-height: initial;
   width: 70px;
   box-sizing: border-box;
-  transform: none;
-  display: flex;
-  position: static !important;
+}
+
+div#app-mount div#magane div.channel-textarea-stickers-content {
+  background-image: url(https://discordapp.com/assets/98b39a3802f75cda51a0b1b539aa7609.svg);
 }
 
 div#app-mount .inner-zqa7da:hover div#magane div.channel-textarea-stickers {
@@ -614,7 +614,7 @@ div#app-mount .inner-zqa7da div#magane div.channel-textarea-stickers.active {
 
 div#app-mount div#magane div.stickerWindow {
   bottom: 78px !important;
-  right: 23px !important;
+  right: calc(-140px + 14px) !important;
   border-radius: 3px;
   background: #212121 !important;
   box-shadow: 0 10px 25px var(--black4);
