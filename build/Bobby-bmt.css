@@ -416,7 +416,7 @@ a[href="/channels/@me"] .badge-1GsMF2 {
   right: 0;
 }
 
-.buttons-205you>.button-38aScr {
+.buttons-205you .button-38aScr {
   margin: 0;
   background: none;
   transform: none;
@@ -426,11 +426,11 @@ a[href="/channels/@me"] .badge-1GsMF2 {
   transition: all 200ms ease;
 }
 
-.buttons-205you>.button-38aScr:hover {
+.buttons-205you .button-38aScr:hover {
   box-shadow: none;
 }
 
-.buttons-205you>.button-38aScr>.contents-18-Yxp {
+.buttons-205you .button-38aScr>.contents-18-Yxp {
   opacity: 1;
 }
 
@@ -439,13 +439,13 @@ a[href="/channels/@me"] .badge-1GsMF2 {
   transform: scale(.85714) !important;
 }
 
-.inner-zqa7da:hover .buttons-205you>.button-38aScr {
+.inner-zqa7da:hover .buttons-205you .button-38aScr {
   opacity: 0.3;
 }
 
-.inner-zqa7da .buttons-205you>.button-38aScr:hover,
-.inner-zqa7da .buttons-205you>.button-38aScr.active-23Nm0T,
-.inner-zqa7da .buttons-205you>.button-38aScr.popout-open {
+.inner-zqa7da .buttons-205you .button-38aScr:hover,
+.inner-zqa7da .buttons-205you .button-38aScr.active-23Nm0T,
+.inner-zqa7da .buttons-205you .button-38aScr.popout-open {
   opacity: 1;
 }
 
