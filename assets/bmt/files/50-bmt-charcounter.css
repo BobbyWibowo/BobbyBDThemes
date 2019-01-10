@@ -15,3 +15,7 @@
 .uploadModal-2ifh8j #charcounter {
   bottom: -16px;
 }
+
+.innerDisabled-2mc-iF #charcounter {
+  display: none;
+}

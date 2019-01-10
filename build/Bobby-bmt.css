@@ -685,3 +685,7 @@ div#app-mount div#magane div.stickerWindow>div.packs div.pack {
 .uploadModal-2ifh8j #charcounter {
   bottom: -16px;
 }
+
+.innerDisabled-2mc-iF #charcounter {
+  display: none;
+}

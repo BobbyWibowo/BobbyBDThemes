@@ -697,6 +697,10 @@ div#app-mount div#magane div.stickerWindow>div.packs div.pack {
   bottom: -16px;
 }
 
+.innerDisabled-2mc-iF #charcounter {
+  display: none;
+}
+
 /** Bobby-bmt-ed.css **/
 /** --- 10-bmt-ed-sidebaricons.css --- **/
 
