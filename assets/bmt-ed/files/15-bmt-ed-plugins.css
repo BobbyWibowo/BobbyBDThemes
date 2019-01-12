@@ -6,7 +6,11 @@
   margin: 0 16px 0 0 !important;
 }
 
-.status[style*="box-shadow:0 0 5px 2px"] {
+.ed-plugin-reload + .switch-3wwwcV {
+  top: 3px;
+}
+
+div[aria-label="USER_SETTINGS"] .status[style*="box-shadow:0 0 5px 2px"] {
   box-shadow: none !important;
   margin-right: 16px !important;
   height: 16px !important;
@@ -14,8 +18,4 @@
   top: 3px !important;
   box-sizing: border-box;
   border: 1px solid #72767D;
-}
-
-.ed-plugin-reload + .switch-3wwwcV {
-  top: 3px;
 }
