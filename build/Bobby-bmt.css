@@ -720,7 +720,7 @@ a[href="/channels/@me"] .badge-1GsMF2 {
 
 /** Tab bar **/
 
-.item-PXvHYJ.selected-3s45Ha {
+:not(.side-8zPYf6)>.item-PXvHYJ.selected-3s45Ha {
   background: none;
 }
 
