@@ -320,3 +320,17 @@
 .searchResults-2J8dju .channelSeparator-1X1FuH::before {
   display: none;
 }
+
+/** Tab bar **/
+
+.item-PXvHYJ.selected-3s45Ha {
+  background: none;
+}
+
+/** Typing spinner **/
+
+.typing-2GQL18 .spinner-2enMB9 {
+  background: none;
+  margin: 0;
+  opacity: 1;
+}

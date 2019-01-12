@@ -14,7 +14,22 @@ textarea {
   font-family: var(--font-family-1) !important;
 }
 
-button {
+button,
+header,
+.channelName-3stJzi,
+.embedAuthorName-3mnTWj,
+.embedTitle-3OXDkz,
+.header-2RyJ0Y,
+.headerText-2niCs_,
+.item-PXvHYJ,
+.listName-3w10cx,
+.membersGroup-v9BXpm,
+.name-2WpE7M,
+.name-3M0b8v,
+.name-3YKhmS,
+.nameDefault-2DI02H,
+.title-1aVOXw,
+.title-3sZWYQ {
   font-family: var(--font-family-2) !important;
 }
 
