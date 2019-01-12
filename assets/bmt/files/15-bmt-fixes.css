@@ -323,7 +323,8 @@
 
 /** Tab bar **/
 
-:not(.side-8zPYf6)>.item-PXvHYJ.selected-3s45Ha {
+/* honestly need a better selector */
+:not(.side-8zPYf6):not(.topPill-30KHOu)>.item-PXvHYJ.selected-3s45Ha {
   background: none;
 }
 

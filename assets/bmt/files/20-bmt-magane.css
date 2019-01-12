@@ -81,6 +81,13 @@ div#app-mount div#magane div.stickerWindow>div.packs div.pack {
   display: inline-block !important;
 }
 
+div#app-mount div#magane div.tab,
+div#app-mount div#magane a.button,
+div#app-mount div#magane div.stickersModal div.pack div.info>span:first-child,
+div#app-mount div#magane div.stickerWindow div#stickers div.pack>span {
+  font-family: var(--font-family-2) !important;
+}
+
 .innerDisabled-2mc-iF div#magane {
   display: none !important;
 }
