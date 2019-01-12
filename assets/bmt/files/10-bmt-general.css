@@ -166,7 +166,7 @@
 
 .theme-dark .timestampCompact-MHgFLv {
   visibility: collapse;
-  width: 8ch;
+  width: 8ch !important;
 }
 
 /** z-index fixes **/

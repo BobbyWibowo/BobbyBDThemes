@@ -238,7 +238,7 @@ code.inline,
 
 .theme-dark .timestampCompact-MHgFLv {
   visibility: collapse;
-  width: 8ch;
+  width: 8ch !important;
 }
 
 /** z-index fixes **/
@@ -1282,6 +1282,11 @@ div#app-mount div#magane div.stickerWindow div#stickers div.pack>span {
 
 [class*="membersWrap-"] [class*="members-"] [class*="member-"] {
   padding: 2px 0 !important;
+}
+
+.preview-2nSL_2 .status-oxiHuE {
+  top: 0 !important;
+  left: 0 !important;
 }
 
 /** --- 50-bmt-charcounter.css --- **/
