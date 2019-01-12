@@ -10,19 +10,19 @@
 
 .theme-dark .root-1BQpZw,
 .theme-dark .container-3gCOGc {
-  background: var(--lvl1) !important
+  background: var(--lvl1) !important;
 }
 
 /** Themes the background for Card with Nitro being paid on it. **/
 
 .theme-dark .premiumIndicator-1XvbfM {
-  background-color: var(--accent-color)
+  background-color: var(--accent-color);
 }
 
 /** Edit Card Button **/
 
 .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
-  background-color: var(--accent-color)
+  background-color: var(--accent-color);
 }
 
 /** Fix All Transactions - Nitro - (Probably) Games - Top Tab **/
@@ -44,7 +44,7 @@
 }
 
 .theme-dark .hoverablePayment-Yc6mK7:hover {
-  background-color: var(--lvl2)
+  background-color: var(--lvl2);
 }
 
 /** Extra information within Payment **/
@@ -84,20 +84,6 @@
   filter: none;
   transition: 200ms cubic-bezier(.2, .11, 0, 1);
 }
-
-/** Returns additional play button for Spotify/games **/
-
-/*
-.attachButtonPlus-rUdX-B {
-  display: none;
-}
-*/
-
-/*
-.attachButtonPlay-ZnFdQr {
-  // TODO: Remove the transformation/scale on this
-}
-*/
 
 /** Escape button fixes **/
 
@@ -147,14 +133,6 @@
 .container-1YxwTf .btn-quote:hover {
   opacity: 1;
 }
-
-/** Fix background in wumpus new account notification **/
-
-/*
-.userPopout-3XzG_A {
-  background-color: var(--lvl1);
-}
-*/
 
 /** Add shadow to emoji picker **/
 
@@ -226,4 +204,18 @@
 
 .theme-dark .option-1l2vXE {
   background: none;
+}
+
+/** GIF picker **/
+
+.theme-dark .categoryFadeBlurple-1j72_A,
+.theme-light .categoryFadeBlurple-1j72_A,
+.theme-dark .categoryFadeBlurple-1j72_A:hover,
+.theme-light .categoryFadeBlurple-1j72_A:hover {
+  background-color: var(--accent-color);
+  opacity: 0.8;
+}
+
+.theme-dark .focused-1En8bG:after, .theme-dark .result-3w1ZcL:hover:after {
+  box-shadow: inset 0 0 0 2px var(--accent-color), inset 0 0 0 3px #2f3136;
 }
