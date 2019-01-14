@@ -102,3 +102,7 @@ div#app-mount div#magane div.stickerWindow div.sticker:hover {
   transition: transform .1s ease;
   z-index: 1;
 }
+
+div#app-mount .innerDisabled-2mc-iF div#magane {
+  display: none;
+}

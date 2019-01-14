@@ -326,6 +326,10 @@ div#app-mount div#magane div.stickerWindow div.sticker:hover {
   z-index: 1;
 }
 
+div#app-mount .innerDisabled-2mc-iF div#magane {
+  display: none;
+}
+
 /** --- 40-nox-radialstatus.css --- **/
 
 /** Radial Status **/
@@ -337,6 +341,27 @@ div#app-mount div#magane div.stickerWindow div.sticker:hover {
 .preview-2nSL_2 .status-oxiHuE {
   top: 0 !important;
   left: 0 !important;
+}
+
+/** --- 50-nox-charcounter.css --- **/
+
+/** Char Counter **/
+
+#charcounter,
+#charcounter.normal {
+  width: 70px;
+  bottom: 5px;
+  right: 0;
+}
+
+.message-1PNnaP #charcounter,
+.uploadModal-2ifh8j #charcounter {
+  left: 0;
+  bottom: -16px;
+}
+
+.innerDisabled-2mc-iF #charcounter {
+  display: none;
 }
 
 /** --- 60-nox-showhiddenchannels.css --- **/

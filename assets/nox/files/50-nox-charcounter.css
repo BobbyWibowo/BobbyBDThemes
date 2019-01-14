@@ -1,0 +1,18 @@
+/** Char Counter **/
+
+#charcounter,
+#charcounter.normal {
+  width: 70px;
+  bottom: 5px;
+  right: 0;
+}
+
+.message-1PNnaP #charcounter,
+.uploadModal-2ifh8j #charcounter {
+  left: 0;
+  bottom: -16px;
+}
+
+.innerDisabled-2mc-iF #charcounter {
+  display: none;
+}
