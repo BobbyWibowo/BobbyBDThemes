@@ -23,7 +23,7 @@ Full version: [Download](https://blog.fiery.me/BobbyBDThemes/build/Bobby-nox.ed.
 >
 > It uses `build-ed-template.css` as the template, which already includes `@import` lines for Nox itself.
 
-If you need remote a version, this is pretty much all you need (save it as a `.css` file then use it from ED settings):
+If you need remote version, this is pretty much all you need (save it as a `.css` file then use it from ED settings):
 
 ```css
 /** This is for EnhancedDiscord **/
