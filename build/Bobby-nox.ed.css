@@ -54,6 +54,17 @@ code.inline,
   font-family: var(--font-family-monospace) !important;
 }
 
+/** Enlarge default emoji size to 40px, works better with Emote Zoom **/
+
+#app-mount .markup-2BOw-j>.emoji.jumboable {
+  height: 40px !important;
+  width: 40px !important;
+}
+
+#app-mount .markup-2BOw-j>.emoji.jumboable:hover {
+  z-index: 2;
+}
+
 /** Remove Nitro Gift button from textarea **/
 
 .buttons-205you>.button-38aScr[tabindex="2"] {
