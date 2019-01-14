@@ -18,10 +18,26 @@ Remote version: [Download](https://blog.fiery.me/BobbyBDThemes/build/Bobby-nox.r
 
 ### EnhancedDiscord theme
 
-[Download](https://blog.fiery.me/BobbyBDThemes/build/Bobby-nox.ed.css)
+Full version: [Download](https://blog.fiery.me/BobbyBDThemes/build/Bobby-nox.ed.css)
 > This contain all the tweaks in a single file, along with some [EnhancedDiscord-exclusive tweaks](https://github.com/BobbyWibowo/BobbyBDThemes/tree/master/assets/nox-ed/files), but you will have to redownload the file to update.
 >
 > It uses `build-ed-template.css` as the template, which already includes `@import` lines for Nox itself.
+
+If you need remote a version, this is pretty much all you need (save it as a `.css` file then use it from ED settings):
+
+```css
+/** This is for EnhancedDiscord **/
+
+@import url(https://rauenzi.github.io/Nox/release/import.css);
+
+@import url(https://rawgit.com/rauenzi/BetterDiscordAddons/master/Themes/RadialStatus/import/RadialStatus.css);
+
+/** Bobby-nox.css **/
+@import url(https://blog.fiery.me/BobbyBDThemes/build/Bobby-nox.css);
+
+/** Bobby-nox-ed.css **/
+@import url(https://blog.fiery.me/BobbyBDThemes/build/Bobby-nox-ed.css);
+```
 
 ### import()
 
