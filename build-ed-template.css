@@ -1,12 +1,11 @@
 /** This is for EnhancedDiscord **/
 
-@import url(https://rawgit.com/BeardDesign1/Material-design-theme-ressources/master/code-files/beta/beta.css);
-@import url(https://rawgit.com/BeardDesign1/Material-design-theme-ressources/master/code-files/beta/notifications.css);
+@import url(https://rauenzi.github.io/Nox/release/import.css);
 
 @import url(https://rawgit.com/rauenzi/BetterDiscordAddons/master/Themes/RadialStatus/import/RadialStatus.css);
 
-/** Bobby-bmt.css **/
-/** INSERT: bmt **/
+/** Bobby-nox.css **/
+/** INSERT: nox **/
 
-/** Bobby-bmt-ed.css **/
-/** INSERT: bmt-ed **/
+/** Bobby-nox-ed.css **/
+/** INSERT: nox-ed **/

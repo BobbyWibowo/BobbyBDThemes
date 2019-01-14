@@ -1,0 +1,104 @@
+/**
+  Magane custom styling for Nox.
+  Only compatible with Bobby's fork of Magane:
+  https://github.com/BobbyWibowo/Magane/blob/master/HOWTO.md
+  Minimum version requirement: 0.1.5
+
+  TODO: Animation?
+**/
+
+div#app-mount div#magane a,
+div#app-mount div#magane button,
+div#app-mount div#magane div,
+div#app-mount div#magane input,
+div#app-mount div#magane label,
+div#app-mount div#magane li,
+div#app-mount div#magane p,
+div#app-mount div#magane select,
+div#app-mount div#magane span,
+div#app-mount div#magane ul {
+  font-family: inherit !important;
+}
+
+div#app-mount div#magane {
+  height: 100%;
+}
+
+div#app-mount div#magane div.channel-textarea-stickers {
+  display: flex;
+  padding: 6px;
+  min-height: 32px;
+  max-height: initial;
+  width: 50px;
+  box-sizing: border-box;
+  opacity: 1;
+  transform: none;
+}
+
+div#app-mount div#magane div.channel-textarea-stickers:hover,
+div#app-mount div#magane div.channel-textarea-stickers.active {
+  filter: brightness(93%) contrast(110%);
+  transform: translate(0, -1px);
+  transition: unset;
+}
+
+div#app-mount div#magane div.channel-textarea-stickers:active {
+  transform: translate(0, 2px);
+}
+
+div#app-mount div#magane div.channel-textarea-stickers-content {
+  /* background-image: url(https://i.fiery.me/LcNr.svg); */
+  background-image: url(https://discordapp.com/assets/98b39a3802f75cda51a0b1b539aa7609.svg);
+  opacity: 0.3;
+  width: 22px;
+  height: 22px;
+  transform: scale(.85714);
+  transition: opacity .1s ease, transform .1s ease, -webkit-transform .1s ease;
+}
+
+div#app-mount div#magane div.channel-textarea-stickers:hover div.channel-textarea-stickers-content,
+div#app-mount div#magane div.channel-textarea-stickers.active div.channel-textarea-stickers-content {
+  opacity: 1;
+  transform: none;
+}
+
+div#app-mount div#magane div.stickerWindow {
+  bottom: calc(45px + 7px) !important;
+  right: calc(-100px + 14px) !important;
+  border-radius: 3px;
+  background: #212121 !important;
+}
+
+div#app-mount div#magane div.stickerWindow>div.packs {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  height: 58px !important;
+  background: #141414 !important;
+}
+
+div#app-mount div#magane div.stickerWindow>div.packs::-webkit-scrollbar {
+  height: 8px !important;
+}
+
+div#app-mount div#magane div.stickerWindow>div.packs::-webkit-scrollbar-thumb {
+  border-radius: 3px !important;
+}
+
+div#app-mount div#magane div.stickerWindow>div.packs div.pack {
+  float: none !important;
+  display: inline-block !important;
+}
+
+div#app-mount div#magane div.tab,
+div#app-mount div#magane a.button,
+div#app-mount div#magane div.stickersModal div.pack div.info>span:first-child,
+div#app-mount div#magane div.stickerWindow div#stickers div.pack>span {
+  font-family: var(--font-family-2) !important;
+}
+
+div#app-mount div#magane div.stickerWindow div.sticker:hover {
+  transform: scale(1.25);
+  transition: transform .1s ease;
+  z-index: 1;
+}

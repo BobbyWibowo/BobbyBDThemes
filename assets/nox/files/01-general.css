@@ -1,0 +1,52 @@
+:root {
+  --font-family-1: 'Ubuntu', sans-serif;
+  --font-family-2: 'Google Sans', 'Ubuntu', sans-serif;
+  --font-family-monospace: 'Fira Code', monospace;
+}
+
+/** Fonts **/
+
+::-webkit-input-placeholder,
+body,
+input,
+select,
+textarea {
+  font-family: var(--font-family-1) !important;
+}
+
+button,
+.channelName-3stJzi,
+.embedAuthorName-3mnTWj,
+.embedTitle-3OXDkz,
+.header-2RyJ0Y,
+.headerName-fajvi9,
+.headerText-2niCs_,
+.item-PXvHYJ,
+.listName-3w10cx,
+.membersGroup-v9BXpm,
+.name-2WpE7M,
+.name-3M0b8v,
+.name-3YKhmS,
+.nameDefault-2DI02H,
+.nameTag-m8r81H,
+.activityFeed-28jde9 .title-CZQTru,
+.applicationStore-1pNvnv .title-CZQTru,
+.title-3sZWYQ,
+.titleText-3X-zRE,
+.username-_4ZSMR {
+  font-family: var(--font-family-2) !important;
+}
+
+code,
+code.inline,
+.ace_editor,
+.line-numbers,
+.editor {
+  font-family: var(--font-family-monospace) !important;
+}
+
+/** Remove Nitro Gift button from textarea **/
+
+.buttons-205you>.button-38aScr[tabindex="2"] {
+  display: none;
+}

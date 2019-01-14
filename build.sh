@@ -8,10 +8,10 @@ COPY_TO=~/.config/BetterDiscord/themes
 
 # for EnhancedDiscord (with -e option)
 ED_BUILD_FROM=(
-  bmt
-  bmt-ed
+  nox
+  nox-ed
 )
-ED_BUILD_NAME="bmt.ed.css"
+ED_BUILD_NAME="nox.ed.css"
 ED_COPY_TO=~/.config/EnhancedDiscord/plugins
 
 # options
@@ -43,6 +43,7 @@ do
 
   # skip regular files
   [ -f $DIRECTORY ] && break
+  [[ "$DIRECTORY" =~ ^_.*$ ]] && break
 
   [ $quiet -eq 0 ] && echo "Building \"$DIRECTORY\"..."
   TARGET="$BUILD_DIR/$PREFIX$DIRECTORY.css"

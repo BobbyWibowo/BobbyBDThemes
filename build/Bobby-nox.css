@@ -1,0 +1,337 @@
+/** --- 01-general.css --- **/
+
+:root {
+  --font-family-1: 'Ubuntu', sans-serif;
+  --font-family-2: 'Google Sans', 'Ubuntu', sans-serif;
+  --font-family-monospace: 'Fira Code', monospace;
+}
+
+/** Fonts **/
+
+::-webkit-input-placeholder,
+body,
+input,
+select,
+textarea {
+  font-family: var(--font-family-1) !important;
+}
+
+button,
+.channelName-3stJzi,
+.embedAuthorName-3mnTWj,
+.embedTitle-3OXDkz,
+.header-2RyJ0Y,
+.headerName-fajvi9,
+.headerText-2niCs_,
+.item-PXvHYJ,
+.listName-3w10cx,
+.membersGroup-v9BXpm,
+.name-2WpE7M,
+.name-3M0b8v,
+.name-3YKhmS,
+.nameDefault-2DI02H,
+.nameTag-m8r81H,
+.activityFeed-28jde9 .title-CZQTru,
+.applicationStore-1pNvnv .title-CZQTru,
+.title-3sZWYQ,
+.titleText-3X-zRE,
+.username-_4ZSMR {
+  font-family: var(--font-family-2) !important;
+}
+
+code,
+code.inline,
+.ace_editor,
+.line-numbers,
+.editor {
+  font-family: var(--font-family-monospace) !important;
+}
+
+/** Remove Nitro Gift button from textarea **/
+
+.buttons-205you>.button-38aScr[tabindex="2"] {
+  display: none;
+}
+
+/** --- 10-nox-general.css --- **/
+
+/** Emoji button's opacity **/
+
+.theme-dark .emojiButton-3uL3Aw {
+  opacity: 0.3;
+}
+
+/** Fade user popupt background **/
+
+.root-SR8cQa .activity-1ythUs,
+.userPopout-3XzG_A .header-2BwW8b .activity-11LB_k {
+  background: none;
+  background-image: linear-gradient(to top, var(--lvl2), transparent);
+}
+
+/** Blur account email **/
+
+.userInfoViewing-16kqK3 .flexChild-faoVW3>div:nth-child(2) .viewBody-2Qz-jg.selectable-x8iAUj {
+  filter: blur(5px);
+  transition: 200ms cubic-bezier(.2, .11, 0, 1);
+}
+
+.userInfoViewing-16kqK3 .flexChild-faoVW3>div:nth-child(2) .viewBody-2Qz-jg.selectable-x8iAUj:hover {
+  filter: none;
+  transition: 200ms cubic-bezier(.2, .11, 0, 1);
+}
+
+/** Use rotate transform instead of translateY cause z-index is a total trainwreck **/
+
+.title-3qD0b- .icon-1R19_H.popout-open {
+  transform: rotate(180deg);
+  transition: transform 400ms cubic-bezier(0.3, 0.3, 0, 1);
+}
+
+/** --- 11-nox-flashmention.css --- **/
+
+/**
+  Add flash animation to mention badges.
+  To customise the color, change the rgb values.
+  Originally made by Mperor.
+**/
+
+.containerDefault-1ZnADq .wrapper-232cHJ,
+.guild-1EfMGQ .badge-1GsMF2:not(.count),
+a[href="/channels/@me"] .badge-1GsMF2 {
+  animation: mention-flash 1.5s linear infinite;
+}
+
+@keyframes mention-flash {
+  0% {
+    box-shadow: 0 0px 10px rgba(240, 71, 71, 0), 0 0 0 0px rgba(240, 71, 71, .4);
+  }
+  50% {
+    box-shadow: 0 0px 20px 15px rgba(240, 71, 71, .3), 0 0 0 4px rgba(240, 71, 71, .7);
+  }
+  100% {
+    box-shadow: 0 0px 25px 16px rgba(240, 71, 71, 0), 0 0 3px 8px rgba(240, 71, 71, 0);
+  }
+}
+
+/** --- 12-nox-badges.css --- **/
+
+/** Force colored version for badges, except on Spotify (support BadgesEverywhere) **/
+
+.topSectionNormal-2-vo2m .profileBadgeStaff-13GO7z,
+:not(.topSectionSpotify-1lI0-P)>.header-QKLPzZ .profileBadgeStaff-13GO7z,
+:not(.headerSpotify-zpWxgT)>.headerTop-3C2Zn0 .profileBadgeStaff-13GO7z {
+  background-image: url(https://discordapp.com/assets/4358ad1fb423b346324516453750f569.svg);
+}
+
+.topSectionNormal-2-vo2m .profileBadgePartner-SjK6L2,
+:not(.topSectionSpotify-1lI0-P)>.header-QKLPzZ .profileBadgePartner-SjK6L2,
+:not(.headerSpotify-zpWxgT)>.headerTop-3C2Zn0 .profileBadgePartner-SjK6L2 {
+  background-image: url(https://discordapp.com/assets/33fedf082addb91d88abc272b4b18daa.svg);
+}
+
+.topSectionNormal-2-vo2m .profileBadgeBugHunter-IV0vLE,
+:not(.topSectionSpotify-1lI0-P)>.header-QKLPzZ .profileBadgeBugHunter-IV0vLE,
+:not(.headerSpotify-zpWxgT)>.headerTop-3C2Zn0 .profileBadgeBugHunter-IV0vLE {
+  background-image: url(https://discordapp.com/assets/f61b8981e92feead854f52e5a1ba14f0.svg);
+}
+
+.topSectionNormal-2-vo2m .profileBadgeHypesquad-1YIe7Z,
+:not(.topSectionSpotify-1lI0-P)>.header-QKLPzZ .profileBadgeHypesquad-1YIe7Z,
+:not(.headerSpotify-zpWxgT)>.headerTop-3C2Zn0 .profileBadgeHypesquad-1YIe7Z {
+  background-image: url(https://discordapp.com/assets/3a050fcc884255231b99b7033c776070.svg);
+}
+
+.topSectionNormal-2-vo2m .profileBadgeHypeSquadOnlineHouse1-xN6tES,
+:not(.topSectionSpotify-1lI0-P)>.header-QKLPzZ .profileBadgeHypeSquadOnlineHouse1-xN6tES,
+:not(.headerSpotify-zpWxgT)>.headerTop-3C2Zn0 .profileBadgeHypeSquadOnlineHouse1-xN6tES {
+  background-image: url(https://discordapp.com/assets/64ae1208b6aefc0a0c3681e6be36f0ff.svg)
+}
+
+.topSectionNormal-2-vo2m .profileBadgeHypeSquadOnlineHouse2-3jBpXR,
+:not(.topSectionSpotify-1lI0-P)>.header-QKLPzZ .profileBadgeHypeSquadOnlineHouse2-3jBpXR,
+:not(.headerSpotify-zpWxgT)>.headerTop-3C2Zn0 .profileBadgeHypeSquadOnlineHouse2-3jBpXR {
+  background-image: url(https://discordapp.com/assets/48cf0556d93901c8cb16317be2436523.svg);
+}
+
+.topSectionNormal-2-vo2m .profileBadgeHypeSquadOnlineHouse3-1YbjMX,
+:not(.topSectionSpotify-1lI0-P)>.header-QKLPzZ .profileBadgeHypeSquadOnlineHouse3-1YbjMX,
+:not(.headerSpotify-zpWxgT)>.headerTop-3C2Zn0 .profileBadgeHypeSquadOnlineHouse3-1YbjMX {
+  background-image: url(https://discordapp.com/assets/9fdc63ef8a3cc1617c7586286c34e4f1.svg);
+}
+
+.topSectionNormal-2-vo2m .profileBadgeEarlySupporter-PQB_0a,
+:not(.topSectionSpotify-1lI0-P)>.header-QKLPzZ .profileBadgeEarlySupporter-PQB_0a,
+:not(.headerSpotify-zpWxgT)>.headerTop-3C2Zn0 .profileBadgeEarlySupporter-PQB_0a {
+  background-image: url(https://discordapp.com/assets/23e59d799436a73c024819f84ea0b627.svg);
+}
+
+.topSectionNormal-2-vo2m .profileBadgePremium-3kZ9Qj,
+:not(.topSectionSpotify-1lI0-P)>.header-QKLPzZ .profileBadgePremium-3kZ9Qj,
+:not(.headerSpotify-zpWxgT)>.headerTop-3C2Zn0 .profileBadgePremium-3kZ9Qj {
+  background-image: url(https://discordapp.com/assets/386884eecd36164487505ddfbac35a9d.svg);
+}
+
+/** --- 13-nox-smarterembeds.css --- **/
+
+/** SmarterEmbeds by Beard **/
+
+.container-1YxwTf .container-1e22Ot {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.container-1YxwTf .container-1e22Ot> :not(:last-of-type) {
+  margin-right: 10px;
+}
+
+.container-1YxwTf .container-1e22Ot>* {
+  margin-top: 5px;
+}
+
+.reactions-1xb2Ex {
+  width: 100%;
+  flex: 100%;
+  order: 9999999999;
+}
+
+/** --- 20-nox-magane.css --- **/
+
+/**
+  Magane custom styling for Nox.
+  Only compatible with Bobby's fork of Magane:
+  https://github.com/BobbyWibowo/Magane/blob/master/HOWTO.md
+  Minimum version requirement: 0.1.5
+
+  TODO: Animation?
+**/
+
+div#app-mount div#magane a,
+div#app-mount div#magane button,
+div#app-mount div#magane div,
+div#app-mount div#magane input,
+div#app-mount div#magane label,
+div#app-mount div#magane li,
+div#app-mount div#magane p,
+div#app-mount div#magane select,
+div#app-mount div#magane span,
+div#app-mount div#magane ul {
+  font-family: inherit !important;
+}
+
+div#app-mount div#magane {
+  height: 100%;
+}
+
+div#app-mount div#magane div.channel-textarea-stickers {
+  display: flex;
+  padding: 6px;
+  min-height: 32px;
+  max-height: initial;
+  width: 50px;
+  box-sizing: border-box;
+  opacity: 1;
+  transform: none;
+}
+
+div#app-mount div#magane div.channel-textarea-stickers:hover,
+div#app-mount div#magane div.channel-textarea-stickers.active {
+  filter: brightness(93%) contrast(110%);
+  transform: translate(0, -1px);
+  transition: unset;
+}
+
+div#app-mount div#magane div.channel-textarea-stickers:active {
+  transform: translate(0, 2px);
+}
+
+div#app-mount div#magane div.channel-textarea-stickers-content {
+  /* background-image: url(https://i.fiery.me/LcNr.svg); */
+  background-image: url(https://discordapp.com/assets/98b39a3802f75cda51a0b1b539aa7609.svg);
+  opacity: 0.3;
+  width: 22px;
+  height: 22px;
+  transform: scale(.85714);
+  transition: opacity .1s ease, transform .1s ease, -webkit-transform .1s ease;
+}
+
+div#app-mount div#magane div.channel-textarea-stickers:hover div.channel-textarea-stickers-content,
+div#app-mount div#magane div.channel-textarea-stickers.active div.channel-textarea-stickers-content {
+  opacity: 1;
+  transform: none;
+}
+
+div#app-mount div#magane div.stickerWindow {
+  bottom: calc(45px + 7px) !important;
+  right: calc(-100px + 14px) !important;
+  border-radius: 3px;
+  background: #212121 !important;
+}
+
+div#app-mount div#magane div.stickerWindow>div.packs {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  height: 58px !important;
+  background: #141414 !important;
+}
+
+div#app-mount div#magane div.stickerWindow>div.packs::-webkit-scrollbar {
+  height: 8px !important;
+}
+
+div#app-mount div#magane div.stickerWindow>div.packs::-webkit-scrollbar-thumb {
+  border-radius: 3px !important;
+}
+
+div#app-mount div#magane div.stickerWindow>div.packs div.pack {
+  float: none !important;
+  display: inline-block !important;
+}
+
+div#app-mount div#magane div.tab,
+div#app-mount div#magane a.button,
+div#app-mount div#magane div.stickersModal div.pack div.info>span:first-child,
+div#app-mount div#magane div.stickerWindow div#stickers div.pack>span {
+  font-family: var(--font-family-2) !important;
+}
+
+div#app-mount div#magane div.stickerWindow div.sticker:hover {
+  transform: scale(1.25);
+  transition: transform .1s ease;
+  z-index: 1;
+}
+
+/** --- 40-nox-radialstatus.css --- **/
+
+/** Radial Status **/
+
+[class*="membersWrap-"] [class*="members-"] [class*="member-"] {
+  padding: 2px 0 !important;
+}
+
+.preview-2nSL_2 .status-oxiHuE {
+  top: 0 !important;
+  left: 0 !important;
+}
+
+/** --- 60-nox-showhiddenchannels.css --- **/
+
+/** Show Hidden Channels **/
+
+.showhiddenchannels-tooltip .marginBottom4-2qk4Hy {
+  font-family: var(--font-family-2);
+}
+
+.showhiddenchannels-tooltip .flex-1O1GKY:nth-child(2) .role-2irmRk {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/** --- 70-nox-imagedetails.css --- **/
+
+/** Image details **/
+
+.image-details {
+  margin-bottom: 5px;
+}

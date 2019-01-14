@@ -1,34 +1,34 @@
-# Bobby's BD Themes
+# Bobby's ~~BD~~ Themes
 
-Bobby's personal collection of BD themes (or more like "tweaks").
+Bobby's personal collection of ~~BD~~ themes (or more like "tweaks").
 
-## Installation (BMT's Tweaks)
+## Installation (Nox's Tweaks)
 
-This is a compilaton of tweaks for [Beard's Material Theme](https://github.com/BeardDesign1/Material-design-theme-ressources).
+This is a compilaton of tweaks for [Nox](https://github.com/rauenzi/Nox).
 
-As this contains only tweaks, of course this needs to be loaded alongside BMT itself. If possible, make sure it's loaded *after* BMT.
+As this contains only tweaks, of course this needs to be loaded alongside Nox itself. If possible, make sure it's loaded *after* Nox.
 
 ### BetterDiscord theme
 
-Full version: [Download](https://blog.fiery.me/BobbyBDThemes/build/Bobby-bmt.theme.css)
+Full version: [Download](https://blog.fiery.me/BobbyBDThemes/build/Bobby-nox.theme.css)
 > This contain all the tweaks in a single file, but you will have to redownload the file to update.
 
-Remote version: [Download](https://blog.fiery.me/BobbyBDThemes/build/Bobby-bmt.remote.theme.css)
+Remote version: [Download](https://blog.fiery.me/BobbyBDThemes/build/Bobby-nox.remote.theme.css)
 > This will remotely load the tweaks from this repo, so you will not have to manually update the theme (restarting Discord should generally be enough to update the theme).
 
 ### EnhancedDiscord theme
 
-[Download](https://blog.fiery.me/BobbyBDThemes/build/Bobby-bmt.ed.css)
-> This contain all the tweaks in a single file, along with some [EnhancedDiscord-exclusive tweaks](https://github.com/BobbyWibowo/BobbyBDThemes/tree/master/assets/bmt-ed/files), but you will have to redownload the file to update.
+[Download](https://blog.fiery.me/BobbyBDThemes/build/Bobby-nox.ed.css)
+> This contain all the tweaks in a single file, along with some [EnhancedDiscord-exclusive tweaks](https://github.com/BobbyWibowo/BobbyBDThemes/tree/master/assets/nox-ed/files), but you will have to redownload the file to update.
 >
-> It uses `build-ed-template.css` as the template, which already includes `@import` lines for BMT itself.
+> It uses `build-ed-template.css` as the template, which already includes `@import` lines for Nox itself.
 
 ### import()
 
 You can use this line to import the theme:
 
 ```css
-@import url(https://blog.fiery.me/BobbyBDThemes/build/Bobby-bmt.css);
+@import url(https://blog.fiery.me/BobbyBDThemes/build/Bobby-nox.css);
 ```
 
 That's pretty much what the remote version does, by the way.
@@ -37,15 +37,13 @@ That's pretty much what the remote version does, by the way.
 
 If you only need some parts of the tweaks instead of the whole thing, you can choose to import only some of them.
 
-First head to [/assets/bmt/files](https://github.com/BobbyWibowo/BobbyBDThemes/tree/master/assets/bmt/files) to view all available modules.
+First head to [/assets/nox/files](https://github.com/BobbyWibowo/BobbyBDThemes/tree/master/assets/nox/files) to view all available modules.
 
-For example, to import `20-bmt-magane.css`, its import line will be:
+For example, to import `20-nox-magane.css`, its import line will be:
 
 ```css
-@import url(https://blog.fiery.me/BobbyBDThemes/assets/bmt/files/20-bmt-magane.css);
+@import url(https://blog.fiery.me/BobbyBDThemes/assets/nox/files/20-nox-magane.css);
 ```
-
-> I tried to make the modules work by themselves, but certain module can only work alongside other modules (e.i. `20-bmt-magane.css` will only work best with `15-bmt-fixes.css` as it contains the necessary fixes for textarea buttons).
 
 ## Build
 
