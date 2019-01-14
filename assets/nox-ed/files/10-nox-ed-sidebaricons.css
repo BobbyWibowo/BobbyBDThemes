@@ -52,12 +52,12 @@ div[aria-label="USER_SETTINGS"] .sidebarRegion-VFTUkN .item-PXvHYJ:nth-of-type(6
 /** Premium Settings **/
 /* Nitro */
 div[aria-label="USER_SETTINGS"] .sidebarRegion-VFTUkN .item-PXvHYJ:nth-of-type(8) {
-  color: var(--accent-color) !important;
+  color: var(--nox-accent) !important;
 }
 
 div[aria-label="USER_SETTINGS"] .sidebarRegion-VFTUkN .item-PXvHYJ:nth-of-type(8).selected-3s45Ha {
   color: #fff !important;
-  background: var(--accent-color) !important;
+  background: var(--nox-accent) !important;
 }
 
 div[aria-label="USER_SETTINGS"] .sidebarRegion-VFTUkN .item-PXvHYJ:nth-of-type(8)::before,
@@ -66,7 +66,7 @@ div[aria-label="USER_SETTINGS"] .sidebarRegion-VFTUkN .ui-standard-sidebar-view 
   width: 24px;
   height: 0px;
   font-family: BMTicons,Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
-  color: var(--accent-color);
+  color: var(--nox-accent);
   font-size: 23px;
   transform: translate(0, 4px);
   opacity: 1;

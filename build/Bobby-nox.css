@@ -83,7 +83,7 @@ code.inline,
 .root-SR8cQa .activity-1ythUs,
 .userPopout-3XzG_A .header-2BwW8b .activity-11LB_k {
   background: none;
-  background-image: linear-gradient(to top, var(--lvl2), transparent);
+  background-image: linear-gradient(to top, var(--nox-level2), transparent);
 }
 
 /** Blur account email **/
@@ -125,6 +125,12 @@ code.inline,
   /* This method works better when using Server Folders **/
   left: inherit !important;
   margin-left: -10px;
+}
+
+/** Tab bars in member card overlay **/
+
+.tabBar-2MuP6-.top-28JiJ- {
+  height: 100%;
 }
 
 /** --- 11-nox-flashmention.css --- **/
