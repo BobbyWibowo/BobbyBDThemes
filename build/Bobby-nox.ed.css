@@ -122,6 +122,18 @@ code.inline,
   margin-top: 0;
 }
 
+/** Fix positioning of status changer - Linux only **/
+
+.platform-linux .container-2Thooq .avatar-3JE4B3 + .status-oxiHuE::before {
+  left: 0;
+}
+
+.platform-linux ~ .popouts-3dRSmE .alt-3btY0e.menu-Sp6bN1 {
+  /* This method works better when using Server Folders **/
+  left: inherit !important;
+  margin-left: -10px;
+}
+
 /** --- 11-nox-flashmention.css --- **/
 
 /**
