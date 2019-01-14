@@ -107,6 +107,16 @@ code.inline,
   transition: transform 400ms cubic-bezier(0.3, 0.3, 0, 1);
 }
 
+/** Remove margins from emojis **/
+
+.emoji {
+  margin: 0;
+}
+
+.emoji.jumboable {
+  margin-top: 0;
+}
+
 /** --- 11-nox-flashmention.css --- **/
 
 /**
