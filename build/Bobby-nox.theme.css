@@ -63,7 +63,7 @@ code.inline,
 }
 
 #app-mount .markup-2BOw-j>.emoji.jumboable:hover {
-  z-index: 2;
+  z-index: 2 !important;
 }
 
 /** Remove Nitro Gift button from textarea **/
@@ -82,16 +82,25 @@ code.inline,
 
 /** Emoji button's opacity **/
 
-.theme-dark .emojiButton-3uL3Aw {
-  opacity: 0.3;
+.theme-dark .inner-zqa7da .emojiButton-3uL3Aw {
+  opacity: 0.3 !important;
+}
+
+.theme-dark .inner-zqa7da .emojiButton-3uL3Aw:hover,
+.theme-dark .inner-zqa7da .emojiButton-3uL3Aw:active,
+.theme-dark .inner-zqa7da .emojiButton-3uL3Aw.popout-open,
+.theme-dark .channel-textarea-emoji.popout-open,
+.theme-dark .channel-textarea-emoji:hover,
+.theme-dark .channel-textarea-emoji:active {
+  opacity: 1 !important;
 }
 
 /** Fade user popupt background **/
 
 .root-SR8cQa .activity-1ythUs,
 .userPopout-3XzG_A .header-2BwW8b .activity-11LB_k {
-  background: none;
-  background-image: linear-gradient(to top, var(--nox-level2), transparent);
+  background: none !important;
+  background-image: linear-gradient(to top, var(--nox-level2), transparent) !important;
 }
 
 /** Blur account email **/
@@ -109,8 +118,8 @@ code.inline,
 /** Use rotate transform instead of translateY cause z-index is a total trainwreck **/
 
 .title-3qD0b- .icon-1R19_H.popout-open {
-  transform: rotate(180deg);
-  transition: transform 400ms cubic-bezier(0.3, 0.3, 0, 1);
+  transform: rotate(180deg) !important;
+  transition: transform 400ms cubic-bezier(0.3, 0.3, 0, 1) !important;
 }
 
 /** Remove margins from emojis **/
@@ -239,29 +248,6 @@ a[href="/channels/@me"] .badge-1GsMF2 {
   background-image: url(https://discordapp.com/assets/386884eecd36164487505ddfbac35a9d.svg) !important;
 }
 
-/** --- 13-nox-smarterembeds.css --- **/
-
-/** SmarterEmbeds by Beard **/
-
-.container-1YxwTf .container-1e22Ot {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.container-1YxwTf .container-1e22Ot> :not(:last-of-type) {
-  margin-right: 10px;
-}
-
-.container-1YxwTf .container-1e22Ot>* {
-  margin-top: 5px;
-}
-
-.reactions-1xb2Ex {
-  width: 100%;
-  flex: 100%;
-  order: 9999999999;
-}
-
 /** --- 16-nox-tempfixes.css --- **/
 
 /**
@@ -356,11 +342,11 @@ a[href="/channels/@me"] .badge-1GsMF2 {
   top: initial !important;
   height: 70px !important;
   display: block;
-  position: absolute;
+  position: absolute !important;
   transition: all 150ms cubic-bezier(0.5, 0, 0, 1);
   background: #161718;
   pointer-events: none;
-  left: 0;
+  left: 0 !important;
   box-shadow: none !important;
   cursor: initial;
   overflow: visible;
@@ -369,7 +355,7 @@ a[href="/channels/@me"] .badge-1GsMF2 {
 /* Misaligned status picker - Linux only */
 .platform-linux ~ .popouts-3dRSmE .alt-3btY0e.menu-Sp6bN1 {
   left: -10px !important;
-  position: fixed;
+  position: fixed !important;
   bottom: 4px !important;
 }
 
@@ -520,15 +506,15 @@ div#app-mount .innerDisabled-2mc-iF div#magane {
 
 #charcounter,
 #charcounter.normal {
-  width: 70px;
-  bottom: 5px;
-  right: 0;
+  width: 70px !important;
+  bottom: 5px !important;
+  right: 0 !important;
 }
 
 .message-1PNnaP #charcounter,
 .uploadModal-2ifh8j #charcounter {
-  left: 0;
-  bottom: -16px;
+  left: 0 !important;
+  bottom: -16px !important;
 }
 
 .innerDisabled-2mc-iF #charcounter {

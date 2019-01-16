@@ -2,15 +2,15 @@
 
 #charcounter,
 #charcounter.normal {
-  width: 70px;
-  bottom: 5px;
-  right: 0;
+  width: 70px !important;
+  bottom: 5px !important;
+  right: 0 !important;
 }
 
 .message-1PNnaP #charcounter,
 .uploadModal-2ifh8j #charcounter {
-  left: 0;
-  bottom: -16px;
+  left: 0 !important;
+  bottom: -16px !important;
 }
 
 .innerDisabled-2mc-iF #charcounter {

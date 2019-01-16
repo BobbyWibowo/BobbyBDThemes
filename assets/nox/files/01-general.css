@@ -59,7 +59,7 @@ code.inline,
 }
 
 #app-mount .markup-2BOw-j>.emoji.jumboable:hover {
-  z-index: 2;
+  z-index: 2 !important;
 }
 
 /** Remove Nitro Gift button from textarea **/

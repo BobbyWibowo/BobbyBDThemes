@@ -185,6 +185,32 @@ div[aria-label="USER_SETTINGS"] .sidebarRegion-VFTUkN .item-PXvHYJ:nth-last-of-t
   opacity: 1;
 }
 
+/** --- 13-nox-ed-smarterembeds.css --- **/
+
+/**
+  SmarterEmbeds by Beard.
+  Use its BBD theme file if not using ED.
+**/
+
+.container-1YxwTf .container-1e22Ot {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.container-1YxwTf .container-1e22Ot> :not(:last-of-type) {
+  margin-right: 10px;
+}
+
+.container-1YxwTf .container-1e22Ot>* {
+  margin-top: 5px;
+}
+
+.reactions-1xb2Ex {
+  width: 100%;
+  flex: 100%;
+  order: 9999999999;
+}
+
 /** --- 15-nox-ed-plugins.css --- **/
 
 /** Plugins page **/
