@@ -117,22 +117,30 @@ code.inline,
   margin-top: 0;
 }
 
-/** Fix positioning of status changer - Linux only **/
-
-.platform-linux .container-2Thooq .avatar-3JE4B3 + .status-oxiHuE::before {
-  left: 0;
-}
-
-.platform-linux ~ .popouts-3dRSmE .alt-3btY0e.menu-Sp6bN1 {
-  /* This method works better when using Server Folders **/
-  left: inherit !important;
-  margin-left: -10px;
-}
-
 /** Tab bars in member card overlay **/
 
 .tabBar-2MuP6-.top-28JiJ- {
   height: 100%;
+}
+
+/** Store background **/
+
+.applicationStore-1pNvnv {
+  background: var(--nox-level1)!important;
+}
+
+/** Fixes container underneath channels list **/
+
+.container-2Thooq {
+  height: 72px !important;
+}
+
+/** Fix background color of Early Supporter notice in Nitro option **/
+
+.theme-dark .grandfatheredMessage-1BnHtv {
+  background-color: var(--nox-accent) !important;
+  background-image: url(https://svgshare.com/i/AZ7.svg) !important;
+  background-size: 50%;
 }
 
 /** --- 11-nox-flashmention.css --- **/
@@ -240,6 +248,117 @@ a[href="/channels/@me"] .badge-1GsMF2 {
   width: 100%;
   flex: 100%;
   order: 9999999999;
+}
+
+/** --- 16-nox-tempfixes.css --- **/
+
+/**
+  A compilation of tested temp fixes submitted by fellow Nox users in Nox Discord server.
+**/
+
+/** Fix Nitro banner in the nitro tab - by Tropical **/
+.banner-3Kac2g {
+  background: var(--nox-accent) !important;
+}
+
+.tier1Banner-1B_WXY,
+.banner-3Kac2g {
+  background-image: url(https://svgshare.com/i/AZ7.svg) !important;
+  background-size: 50% !important;
+}
+
+.container-2Zlzt0,
+.tier1Banner-1B_WXY {
+  background-color: var(--nox-level3) !important;
+  box-shadow: 0px 0px 5px var(--nox-level3);
+  transition: 250ms box-shadow cubic-bezier(0, 0, 0, 1);
+}
+
+.container-2Zlzt0:hover,
+.tier1Banner-1B_WXY:hover {
+  box-shadow: 0px 2px 20px var(--nox-level3);
+}
+
+/** Guild/DM fixes - by Luke Alan **/
+
+/* Removes Guild Drag and Drop offset by 7px */
+.guilds-1q_RqH .guildPlaceholder-1ioaid {
+  padding-right: 70px !important;
+  margin-top: 0 !important;
+}
+
+/* Square DM fix */
+.guild-1EfMGQ .avatar-S_nsxk {
+  border-radius: 50% !important;
+  left: 12px;
+  top: 9px;
+  width: 46px !important;
+  height: 46px !important;
+}
+
+.guildsWrapper-5TJh6A
+.guilds-1q_RqH
+.guild-1EfMGQ
+.guildInner-3DSoA4 a {
+  border-radius:50% !important;
+}
+
+/* Fixes Cutoff for DMs */
+.guildInner-3DSoA4 {
+  height:100%;
+}
+
+/* Highlight fix */
+.dms-rcsEnV
+.guild-1EfMGQ a::before {
+  height: 67px !important;
+  width: 70px !important;
+  top: -12px !important;
+  left: -12px !important;
+}
+
+.guildsWrapper-5TJh6A .guilds-1q_RqH .dms-rcsEnV .inner-1V3pNb::before {
+  height: 100%;
+  width: 100%;
+  content: "";
+  background: transparent;
+  display: block;
+  visibility: visible;
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  transition: 0ms ease;
+}
+
+.guildsWrapper-5TJh6A .guilds-1q_RqH .dms-rcsEnV .inner-1V3pNb:hover::before {
+  background: rgba(255, 255, 255, 0.06);
+  transition: 0ms ease;
+}
+
+/** Fix for the status picker background issue - by Gas **/
+.alt-3btY0e.menu-Sp6bN1 {
+  border-radius: 0 !important;
+  width: 240px !important;
+  bottom: 6px !important;
+  top: initial !important;
+  height: 70px !important;
+  display: block;
+  position: absolute;
+  transition: all 150ms cubic-bezier(0.5, 0, 0, 1);
+  background: #161718;
+  pointer-events: none;
+  left: 0;
+  box-shadow: none !important;
+  cursor: initial;
+  overflow: visible;
+}
+
+/* Misaligned status picker - Linux only */
+.platform-linux ~ .popouts-3dRSmE .alt-3btY0e.menu-Sp6bN1 {
+  left: -10px !important;
+  position: fixed;
+  bottom: 4px !important;
 }
 
 /** --- 20-nox-magane.css --- **/

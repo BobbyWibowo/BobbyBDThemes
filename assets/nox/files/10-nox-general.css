@@ -41,20 +41,28 @@
   margin-top: 0;
 }
 
-/** Fix positioning of status changer - Linux only **/
-
-.platform-linux .container-2Thooq .avatar-3JE4B3 + .status-oxiHuE::before {
-  left: 0;
-}
-
-.platform-linux ~ .popouts-3dRSmE .alt-3btY0e.menu-Sp6bN1 {
-  /* This method works better when using Server Folders **/
-  left: inherit !important;
-  margin-left: -10px;
-}
-
 /** Tab bars in member card overlay **/
 
 .tabBar-2MuP6-.top-28JiJ- {
   height: 100%;
+}
+
+/** Store background **/
+
+.applicationStore-1pNvnv {
+  background: var(--nox-level1)!important;
+}
+
+/** Fixes container underneath channels list **/
+
+.container-2Thooq {
+  height: 72px !important;
+}
+
+/** Fix background color of Early Supporter notice in Nitro option **/
+
+.theme-dark .grandfatheredMessage-1BnHtv {
+  background-color: var(--nox-accent) !important;
+  background-image: url(https://svgshare.com/i/AZ7.svg) !important;
+  background-size: 50%;
 }
