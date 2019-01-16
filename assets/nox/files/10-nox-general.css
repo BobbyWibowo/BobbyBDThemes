@@ -66,3 +66,9 @@
   background-image: url(https://svgshare.com/i/AZ7.svg) !important;
   background-size: 50%;
 }
+
+/** Remove Clyde's face from system messages **/
+
+.container-1YxwTf>.content-3dzVd8:first-child::after {
+  display: none;
+}

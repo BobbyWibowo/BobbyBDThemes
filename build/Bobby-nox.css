@@ -141,6 +141,12 @@ code.inline,
   background-size: 50%;
 }
 
+/** Remove Clyde's face from system messages **/
+
+.container-1YxwTf>.content-3dzVd8:first-child::after {
+  display: none;
+}
+
 /** --- 11-nox-flashmention.css --- **/
 
 /**
