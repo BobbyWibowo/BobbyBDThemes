@@ -67,3 +67,9 @@ code.inline,
 .buttons-205you>.button-38aScr[tabindex="2"] {
   display: none;
 }
+
+/** Hide owner icon (the crown) **/
+
+.ownerIcon-uZ6mE7 {
+  display: none;
+}

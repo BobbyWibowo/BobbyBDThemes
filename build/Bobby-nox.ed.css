@@ -80,6 +80,12 @@ code.inline,
   display: none;
 }
 
+/** Hide owner icon (the crown) **/
+
+.ownerIcon-uZ6mE7 {
+  display: none;
+}
+
 /** --- 10-nox-general.css --- **/
 
 /** Emoji button's opacity **/
