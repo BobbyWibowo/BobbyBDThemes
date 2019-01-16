@@ -492,6 +492,23 @@ div#app-mount .innerDisabled-2mc-iF div#magane {
   display: none;
 }
 
+/** --- 30-nox-serverfolders.css --- **/
+
+/**
+  Server Folders
+  This was copied as-is from Nox but with !important applied.
+  It seems Server Folders often load its styling late, as in after Nox itself,
+  so it ends up overriding Nox's styling.
+**/
+
+.guild-1EfMGQ.folder .badge-1GsMF2.folder.count {
+  bottom: unset !important;
+  left: unset !important;
+  top: 20px !important;
+  right: -2px !important;
+  background: var(--nox-accent) !important;
+}
+
 /** --- 40-nox-radialstatus.css --- **/
 
 /** Radial Status **/
