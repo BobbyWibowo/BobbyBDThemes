@@ -53,7 +53,7 @@
   background: var(--nox-level1)!important;
 }
 
-/** Fixes container underneath channels list **/
+/** Fix container underneath channels list **/
 
 .container-2Thooq {
   height: 72px !important;
