@@ -81,3 +81,15 @@
 .container-1YxwTf>.content-3dzVd8:first-child::after {
   display: none;
 }
+
+/** Fix status changer **/
+.popouts-3dRSmE .alt-3btY0e.menu-Sp6bN1 {
+  bottom: 6px !important;
+}
+
+/** Misaligned status changer in Linux **/
+.platform-linux ~ .popouts-3dRSmE .alt-3btY0e.menu-Sp6bN1 {
+  left: -10px !important;
+  position: fixed;
+  bottom: 4px !important;
+}
