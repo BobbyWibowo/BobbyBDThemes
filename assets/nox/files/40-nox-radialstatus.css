@@ -4,7 +4,9 @@
   padding: 2px 0 !important;
 }
 
-.preview-2nSL_2 .status-oxiHuE {
+.preview-2nSL_2 [class*="status"],
+.emojiUploader-1f0pVx [class*="status"],
+.card-FDVird .wrapper-2F3Zv8 [class*="status"] {
   top: 0 !important;
   left: 0 !important;
 }

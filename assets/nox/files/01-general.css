@@ -45,6 +45,31 @@ code.inline,
   font-family: var(--font-family-monospace) !important;
 }
 
+/** Fonts display in Themes menu **/
+
+#bd-settingspane-container .bda-slist li[data-name="Bobby's Nox Tweaks"] .scroller-wrap .scroller::after,
+#bd-settingspane-container .bda-slist li[data-name="Bobby's Nox Tweaks"] .scroller-wrap::after {
+  display: block;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  margin: 0 5px;
+  padding: 10px;
+  background-color: var(--nox-accent);
+  color: white;
+  border-radius: 2px;
+}
+
+#bd-settingspane-container .bda-slist li[data-name="Bobby's Nox Tweaks"] .scroller-wrap .scroller::after {
+  content: "Font preview for buttons and titles.";
+  font-family: var(--font-family-2);
+  margin-top: 10px;
+}
+
+#bd-settingspane-container .bda-slist li[data-name="Bobby's Nox Tweaks"] .scroller-wrap::after {
+  content: "Font preview for code blocks.";
+  font-family: var(--font-family-monospace);
+  margin-bottom: 5px;
+}
+
 /**
   Enlarge default emoji size to 40px
 

@@ -57,6 +57,31 @@ code.inline,
   font-family: var(--font-family-monospace) !important;
 }
 
+/** Fonts display in Themes menu **/
+
+#bd-settingspane-container .bda-slist li[data-name="Bobby's Nox Tweaks"] .scroller-wrap .scroller::after,
+#bd-settingspane-container .bda-slist li[data-name="Bobby's Nox Tweaks"] .scroller-wrap::after {
+  display: block;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+  margin: 0 5px;
+  padding: 10px;
+  background-color: var(--nox-accent);
+  color: white;
+  border-radius: 2px;
+}
+
+#bd-settingspane-container .bda-slist li[data-name="Bobby's Nox Tweaks"] .scroller-wrap .scroller::after {
+  content: "Font preview for buttons and titles.";
+  font-family: var(--font-family-2);
+  margin-top: 10px;
+}
+
+#bd-settingspane-container .bda-slist li[data-name="Bobby's Nox Tweaks"] .scroller-wrap::after {
+  content: "Font preview for code blocks.";
+  font-family: var(--font-family-monospace);
+  margin-bottom: 5px;
+}
+
 /**
   Enlarge default emoji size to 40px
 
@@ -71,7 +96,7 @@ code.inline,
 }
 
 #app-mount .markup-2BOw-j>.emoji.jumboable:hover {
-  z-index: 2;
+  z-index: 2 !important;
 }
 
 /** Remove Nitro Gift button from textarea **/
@@ -88,18 +113,12 @@ code.inline,
 
 /** --- 10-nox-general.css --- **/
 
-/** Emoji button's opacity **/
-
-.theme-dark .emojiButton-3uL3Aw {
-  opacity: 0.3;
-}
-
 /** Fade user popupt background **/
 
 .root-SR8cQa .activity-1ythUs,
 .userPopout-3XzG_A .header-2BwW8b .activity-11LB_k {
-  background: none;
-  background-image: linear-gradient(to top, var(--nox-level2), transparent);
+  background: none !important;
+  background-image: linear-gradient(to top, var(--nox-level2), transparent) !important;
 }
 
 /** Blur account email **/
@@ -117,8 +136,8 @@ code.inline,
 /** Use rotate transform instead of translateY cause z-index is a total trainwreck **/
 
 .title-3qD0b- .icon-1R19_H.popout-open {
-  transform: rotate(180deg);
-  transition: transform 400ms cubic-bezier(0.3, 0.3, 0, 1);
+  transform: rotate(180deg) !important;
+  transition: transform 400ms cubic-bezier(0.3, 0.3, 0, 1) !important;
 }
 
 /** Remove margins from emojis **/
@@ -131,29 +150,11 @@ code.inline,
   margin-top: 0;
 }
 
-/** Tab bars in member card overlay **/
-
-.tabBar-2MuP6-.top-28JiJ- {
-  height: 100%;
-}
-
-/** Store background **/
-
-.applicationStore-1pNvnv {
-  background: var(--nox-level1)!important;
-}
-
-/** Fix container underneath channels list **/
-
-.container-2Thooq {
-  height: 72px !important;
-}
-
-/** Fix background color of Early Supporter notice in Nitro option **/
+/** Background color of Early Supporter notice in Nitro option **/
 
 .theme-dark .grandfatheredMessage-1BnHtv {
   background-color: var(--nox-accent) !important;
-  background-image: url(https://svgshare.com/i/AZ7.svg) !important;
+  background-image: url(https://i.fiery.me/xTh9.svg) !important;
   background-size: 50%;
 }
 
@@ -162,6 +163,58 @@ code.inline,
 .container-1YxwTf>.content-3dzVd8:first-child::after {
   display: none;
 }
+
+/** Remove huge ass notice from Plugins/Themes menu **/
+
+#bd-settingspane-container .content-column.default .bda-slist::before {
+  display: none;
+}
+
+/** HypeSquad menu **/
+
+.membershipDialog-rVL-t_ {
+  background-color: var(--nox-level3) !important;
+}
+
+.membershipDialog-rVL-t_::after {
+  background-image: url(https://i.fiery.me/xTh9.svg) !important;
+  background-size: 50% !important;
+  background-repeat: repeat;
+  opacity: 1 !important;
+}
+
+.membershipDialog-rVL-t_ .houseLogo-2MU96l {
+  display: none;
+}
+
+.membershipDialog-rVL-t_ .houseLogoWrapper-3XZ6yo {
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.membershipDialogSwitchHousesAction-2a3eDg {
+  color: #00b0f4 !important;
+}
+
+.membershipDialogSwitchHousesAction-2a3eDg:hover {
+  text-decoration: underline;
+}
+
+.membershipDialogHouse1-3KhKE- .houseLogoWrapper-3XZ6yo {
+  background-image: url(https://i.fiery.me/gYiQ.svg) !important;
+}
+
+.membershipDialogHouse2-35h9SY .houseLogoWrapper-3XZ6yo {
+  background-image: url(https://i.fiery.me/Hf6o.svg) !important;
+}
+
+.membershipDialogHouse3-15OBIQ .houseLogoWrapper-3XZ6yo {
+  background-image: url(https://i.fiery.me/crQK.svg) !important;
+}
+
 
 /** --- 11-nox-flashmention.css --- **/
 
@@ -247,27 +300,94 @@ a[href="/channels/@me"] .badge-1GsMF2 {
   background-image: url(https://discordapp.com/assets/386884eecd36164487505ddfbac35a9d.svg) !important;
 }
 
-/** --- 13-nox-smarterembeds.css --- **/
+/** --- 15-nox-fixes.css --- **/
 
-/** SmarterEmbeds by Beard **/
+/** Emoji button's opacity **/
 
-.container-1YxwTf .container-1e22Ot {
-  display: flex;
-  flex-flow: row wrap;
+.theme-dark .inner-zqa7da .emojiButton-3uL3Aw {
+  opacity: 0.3 !important;
 }
 
-.container-1YxwTf .container-1e22Ot> :not(:last-of-type) {
-  margin-right: 10px;
+.theme-dark .inner-zqa7da .emojiButton-3uL3Aw:hover,
+.theme-dark .inner-zqa7da .emojiButton-3uL3Aw:active,
+.theme-dark .inner-zqa7da .emojiButton-3uL3Aw.popout-open,
+.theme-dark .channel-textarea-emoji.popout-open,
+.theme-dark .channel-textarea-emoji:hover,
+.theme-dark .channel-textarea-emoji:active {
+  opacity: 1 !important;
 }
 
-.container-1YxwTf .container-1e22Ot>* {
-  margin-top: 5px;
+/** Tab bars in member card overlay **/
+
+.tabBar-2MuP6-.top-28JiJ- {
+  height: 100%;
 }
 
-.reactions-1xb2Ex {
-  width: 100%;
-  flex: 100%;
-  order: 9999999999;
+/** Store background **/
+
+.applicationStore-1pNvnv {
+  background: var(--nox-level1)!important;
+}
+
+/** Fix container underneath channels list **/
+
+.container-2Thooq {
+  height: 72px !important;
+}
+
+/** Fix status changer **/
+
+.popouts-3dRSmE .alt-3btY0e.menu-Sp6bN1 {
+  bottom: 6px !important;
+}
+
+/** Misaligned status changer in Linux **/
+
+.platform-linux ~ .popouts-3dRSmE .alt-3btY0e.menu-Sp6bN1 {
+  left: -10px !important;
+  position: fixed;
+  bottom: 4px !important;
+}
+
+/** BetterDiscord's Plugins/Themes controls **/
+
+#bd-settingspane-container .bd-pfbtn {
+  border-radius: 2px !important;
+}
+
+.theme-dark #bd-settingspane-container .trashIcon {
+  position: relative;
+  top: 4px;
+  left: -12px;
+}
+
+/** BetterDiscord Settings' ESC button **/
+
+.theme-dark .standardSidebarView-3F1I7i .esc-text {
+  color: #72767d !important;
+}
+
+/** Transaction History's tab bar icons **/
+
+.paymentHistory-2FXzro .item-PXvHYJ::before {
+  content: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMTkuNDMgMTIuOThjLjA0LS4zMi4wNy0uNjQuMDctLjk4cy0uMDMtLjY2LS4wNy0uOThsMi4xMS0xLjY1Yy4xOS0uMTUuMjQtLjQyLjEyLS42NGwtMi0zLjQ2Yy0uMTItLjIyLS4zOS0uMy0uNjEtLjIybC0yLjQ5IDFjLS41Mi0uNC0xLjA4LS43My0xLjY5LS45OGwtLjM4LTIuNjVDMTQuNDYgMi4xOCAxNC4yNSAyIDE0IDJoLTRjLS4yNSAwLS40Ni4xOC0uNDkuNDJsLS4zOCAyLjY1Yy0uNjEuMjUtMS4xNy41OS0xLjY5Ljk4bC0yLjQ5LTFjLS4yMy0uMDktLjQ5IDAtLjYxLjIybC0yIDMuNDZjLS4xMy4yMi0uMDcuNDkuMTIuNjRsMi4xMSAxLjY1Yy0uMDQuMzItLjA3LjY1LS4wNy45OHMuMDMuNjYuMDcuOThsLTIuMTEgMS42NWMtLjE5LjE1LS4yNC40Mi0uMTIuNjRsMiAzLjQ2Yy4xMi4yMi4zOS4zLjYxLjIybDIuNDktMWMuNTIuNCAxLjA4LjczIDEuNjkuOThsLjM4IDIuNjVjLjAzLjI0LjI0LjQyLjQ5LjQyaDRjLjI1IDAgLjQ2LS4xOC40OS0uNDJsLjM4LTIuNjVjLjYxLS4yNSAxLjE3LS41OSAxLjY5LS45OGwyLjQ5IDFjLjIzLjA5LjQ5IDAgLjYxLS4yMmwyLTMuNDZjLjEyLS4yMi4wNy0uNDktLjEyLS42NGwtMi4xMS0xLjY1ek0xMiAxNS41Yy0xLjkzIDAtMy41LTEuNTctMy41LTMuNXMxLjU3LTMuNSAzLjUtMy41IDMuNSAxLjU3IDMuNSAzLjUtMS41NyAzLjUtMy41IDMuNXoiLz48L3N2Zz4=) !important;
+  opacity: 0.7 !important;
+}
+
+.paymentHistory-2FXzro .item-PXvHYJ.selected-3s45Ha::before,
+.paymentHistory-2FXzro .item-PXvHYJ:hover::before {
+  opacity: 1 !important;
+}
+
+/** Changelog icon when Experiments/Developer Options are turned on **/
+
+#user-settings .item-PXvHYJ:nth-last-of-type(5)::before {
+  content: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMTkuNDMgMTIuOThjLjA0LS4zMi4wNy0uNjQuMDctLjk4cy0uMDMtLjY2LS4wNy0uOThsMi4xMS0xLjY1Yy4xOS0uMTUuMjQtLjQyLjEyLS42NGwtMi0zLjQ2Yy0uMTItLjIyLS4zOS0uMy0uNjEtLjIybC0yLjQ5IDFjLS41Mi0uNC0xLjA4LS43My0xLjY5LS45OGwtLjM4LTIuNjVDMTQuNDYgMi4xOCAxNC4yNSAyIDE0IDJoLTRjLS4yNSAwLS40Ni4xOC0uNDkuNDJsLS4zOCAyLjY1Yy0uNjEuMjUtMS4xNy41OS0xLjY5Ljk4bC0yLjQ5LTFjLS4yMy0uMDktLjQ5IDAtLjYxLjIybC0yIDMuNDZjLS4xMy4yMi0uMDcuNDkuMTIuNjRsMi4xMSAxLjY1Yy0uMDQuMzItLjA3LjY1LS4wNy45OHMuMDMuNjYuMDcuOThsLTIuMTEgMS42NWMtLjE5LjE1LS4yNC40Mi0uMTIuNjRsMiAzLjQ2Yy4xMi4yMi4zOS4zLjYxLjIybDIuNDktMWMuNTIuNCAxLjA4LjczIDEuNjkuOThsLjM4IDIuNjVjLjAzLjI0LjI0LjQyLjQ5LjQyaDRjLjI1IDAgLjQ2LS4xOC40OS0uNDJsLjM4LTIuNjVjLjYxLS4yNSAxLjE3LS41OSAxLjY5LS45OGwyLjQ5IDFjLjIzLjA5LjQ5IDAgLjYxLS4yMmwyLTMuNDZjLjEyLS4yMi4wNy0uNDktLjEyLS42NGwtMi4xMS0xLjY1ek0xMiAxNS41Yy0xLjkzIDAtMy41LTEuNTctMy41LTMuNXMxLjU3LTMuNSAzLjUtMy41IDMuNSAxLjU3IDMuNSAzLjUtMS41NyAzLjUtMy41IDMuNXoiLz48L3N2Zz4=) !important;
+}
+
+#user-settings .item-PXvHYJ:nth-of-type(22)::before,
+div.platform-win #user-settings .item-PXvHYJ:nth-of-type(24)::before {
+  content: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMTkgM2gtNC4xOEMxNC40IDEuODQgMTMuMyAxIDEyIDFjLTEuMyAwLTIuNC44NC0yLjgyIDJINWMtMS4xIDAtMiAuOS0yIDJ2MTRjMCAxLjEuOSAyIDIgMmgxNGMxLjEgMCAyLS45IDItMlY1YzAtMS4xLS45LTItMi0yem0tNyAwYy41NSAwIDEgLjQ1IDEgMXMtLjQ1IDEtMSAxLTEtLjQ1LTEtMSAuNDUtMSAxLTF6bTIgMTRIN3YtMmg3djJ6bTMtNEg3di0yaDEwdjJ6bTAtNEg3VjdoMTB2MnoiLz48L3N2Zz4=) !important;
 }
 
 /** --- 16-nox-tempfixes.css --- **/
@@ -283,7 +403,7 @@ a[href="/channels/@me"] .badge-1GsMF2 {
 
 .tier1Banner-1B_WXY,
 .banner-3Kac2g {
-  background-image: url(https://svgshare.com/i/AZ7.svg) !important;
+  background-image: url(https://i.fiery.me/xTh9.svg) !important;
   background-size: 50% !important;
 }
 
@@ -354,31 +474,6 @@ a[href="/channels/@me"] .badge-1GsMF2 {
 .guildsWrapper-5TJh6A .guilds-1q_RqH .dms-rcsEnV .inner-1V3pNb:hover::before {
   background: rgba(255, 255, 255, 0.06);
   transition: 0ms ease;
-}
-
-/** Fix for the status picker background issue - by Gas **/
-.alt-3btY0e.menu-Sp6bN1 {
-  border-radius: 0 !important;
-  width: 240px !important;
-  bottom: 6px !important;
-  top: initial !important;
-  height: 70px !important;
-  display: block;
-  position: absolute;
-  transition: all 150ms cubic-bezier(0.5, 0, 0, 1);
-  background: #161718;
-  pointer-events: none;
-  left: 0;
-  box-shadow: none !important;
-  cursor: initial;
-  overflow: visible;
-}
-
-/* Misaligned status picker - Linux only */
-.platform-linux ~ .popouts-3dRSmE .alt-3btY0e.menu-Sp6bN1 {
-  left: -10px !important;
-  position: fixed;
-  bottom: 4px !important;
 }
 
 /** --- 20-nox-magane.css --- **/
@@ -517,7 +612,9 @@ div#app-mount .innerDisabled-2mc-iF div#magane {
   padding: 2px 0 !important;
 }
 
-.preview-2nSL_2 .status-oxiHuE {
+.preview-2nSL_2 [class*="status"],
+.emojiUploader-1f0pVx [class*="status"],
+.card-FDVird .wrapper-2F3Zv8 [class*="status"] {
   top: 0 !important;
   left: 0 !important;
 }
@@ -528,15 +625,15 @@ div#app-mount .innerDisabled-2mc-iF div#magane {
 
 #charcounter,
 #charcounter.normal {
-  width: 70px;
-  bottom: 5px;
-  right: 0;
+  width: 70px !important;
+  bottom: 5px !important;
+  right: 0 !important;
 }
 
 .message-1PNnaP #charcounter,
 .uploadModal-2ifh8j #charcounter {
-  left: 0;
-  bottom: -16px;
+  left: 0 !important;
+  bottom: -16px !important;
 }
 
 .innerDisabled-2mc-iF #charcounter {
@@ -750,6 +847,32 @@ div[aria-label="USER_SETTINGS"] .sidebarRegion-VFTUkN .item-PXvHYJ:nth-last-of-t
   content: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZjA0NzQ3IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMTAuMDkgMTUuNTlMMTEuNSAxN2w1LTUtNS01LTEuNDEgMS40MUwxMi42NyAxMUgzdjJoOS42N2wtMi41OCAyLjU5ek0xOSAzSDVjLTEuMTEgMC0yIC45LTIgMnY0aDJWNWgxNHYxNEg1di00SDN2NGMwIDEuMS44OSAyIDIgMmgxNGMxLjEgMCAyLS45IDItMlY1YzAtMS4xLS45LTItMi0yeiIvPjwvc3ZnPg==);
   transform: rotate(180deg) translate(0, -26px);
   opacity: 1;
+}
+
+/** --- 13-nox-ed-smarterembeds.css --- **/
+
+/**
+  SmarterEmbeds by Beard.
+  Use its BBD theme file if not using ED.
+**/
+
+.container-1YxwTf .container-1e22Ot {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.container-1YxwTf .container-1e22Ot> :not(:last-of-type) {
+  margin-right: 10px;
+}
+
+.container-1YxwTf .container-1e22Ot>* {
+  margin-top: 5px;
+}
+
+.reactions-1xb2Ex {
+  width: 100%;
+  flex: 100%;
+  order: 9999999999;
 }
 
 /** --- 15-nox-ed-plugins.css --- **/

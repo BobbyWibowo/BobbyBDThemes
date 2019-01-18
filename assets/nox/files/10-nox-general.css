@@ -1,18 +1,3 @@
-/** Emoji button's opacity **/
-
-.theme-dark .inner-zqa7da .emojiButton-3uL3Aw {
-  opacity: 0.3 !important;
-}
-
-.theme-dark .inner-zqa7da .emojiButton-3uL3Aw:hover,
-.theme-dark .inner-zqa7da .emojiButton-3uL3Aw:active,
-.theme-dark .inner-zqa7da .emojiButton-3uL3Aw.popout-open,
-.theme-dark .channel-textarea-emoji.popout-open,
-.theme-dark .channel-textarea-emoji:hover,
-.theme-dark .channel-textarea-emoji:active {
-  opacity: 1 !important;
-}
-
 /** Fade user popupt background **/
 
 .root-SR8cQa .activity-1ythUs,
@@ -50,29 +35,11 @@
   margin-top: 0;
 }
 
-/** Tab bars in member card overlay **/
-
-.tabBar-2MuP6-.top-28JiJ- {
-  height: 100%;
-}
-
-/** Store background **/
-
-.applicationStore-1pNvnv {
-  background: var(--nox-level1)!important;
-}
-
-/** Fix container underneath channels list **/
-
-.container-2Thooq {
-  height: 72px !important;
-}
-
-/** Fix background color of Early Supporter notice in Nitro option **/
+/** Background color of Early Supporter notice in Nitro option **/
 
 .theme-dark .grandfatheredMessage-1BnHtv {
   background-color: var(--nox-accent) !important;
-  background-image: url(https://svgshare.com/i/AZ7.svg) !important;
+  background-image: url(https://i.fiery.me/xTh9.svg) !important;
   background-size: 50%;
 }
 
@@ -82,14 +49,54 @@
   display: none;
 }
 
-/** Fix status changer **/
-.popouts-3dRSmE .alt-3btY0e.menu-Sp6bN1 {
-  bottom: 6px !important;
+/** Remove huge ass notice from Plugins/Themes menu **/
+
+#bd-settingspane-container .content-column.default .bda-slist::before {
+  display: none;
 }
 
-/** Misaligned status changer in Linux **/
-.platform-linux ~ .popouts-3dRSmE .alt-3btY0e.menu-Sp6bN1 {
-  left: -10px !important;
-  position: fixed;
-  bottom: 4px !important;
+/** HypeSquad menu **/
+
+.membershipDialog-rVL-t_ {
+  background-color: var(--nox-level3) !important;
 }
+
+.membershipDialog-rVL-t_::after {
+  background-image: url(https://i.fiery.me/xTh9.svg) !important;
+  background-size: 50% !important;
+  background-repeat: repeat;
+  opacity: 1 !important;
+}
+
+.membershipDialog-rVL-t_ .houseLogo-2MU96l {
+  display: none;
+}
+
+.membershipDialog-rVL-t_ .houseLogoWrapper-3XZ6yo {
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.membershipDialogSwitchHousesAction-2a3eDg {
+  color: #00b0f4 !important;
+}
+
+.membershipDialogSwitchHousesAction-2a3eDg:hover {
+  text-decoration: underline;
+}
+
+.membershipDialogHouse1-3KhKE- .houseLogoWrapper-3XZ6yo {
+  background-image: url(https://i.fiery.me/gYiQ.svg) !important;
+}
+
+.membershipDialogHouse2-35h9SY .houseLogoWrapper-3XZ6yo {
+  background-image: url(https://i.fiery.me/Hf6o.svg) !important;
+}
+
+.membershipDialogHouse3-15OBIQ .houseLogoWrapper-3XZ6yo {
+  background-image: url(https://i.fiery.me/crQK.svg) !important;
+}
+
