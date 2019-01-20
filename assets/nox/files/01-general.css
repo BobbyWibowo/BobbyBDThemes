@@ -98,3 +98,27 @@ code.inline,
 .ownerIcon-uZ6mE7 {
   display: none;
 }
+
+/** Change icon for Active on Mobile **/
+
+.userPopout-3XzG_A .nameTag-m8r81H {
+  display: flex;
+}
+
+.theme-dark .mobileIndicator-329Gd6,
+.theme-dark .mobileIndicatorPrimary-2viufb {
+  /* background-image: url(https://discordapp.com/assets/7d2027c235ae77bf376436b259acd6cd.svg); */
+  background-image: url(https://intrnl.github.io/assetsEmoji/NotoColorOreo/emoji_u1f4f1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+  height: 17px;
+  width: 17px;
+  position: relative;
+  top: -1px;
+}
+
+.theme-dark .mobileIndicator-329Gd6 g,
+.theme-dark .mobileIndicatorPrimary-2viufb g {
+  display: none;
+}
